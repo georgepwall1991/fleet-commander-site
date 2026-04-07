@@ -1,0 +1,227 @@
+:root {
+  color-scheme: light;
+  --bg: #fff9f1;
+  --panel: rgba(255, 255, 255, 0.88);
+  --panel-border: rgba(210, 162, 98, 0.24);
+  --text: #332117;
+  --muted: #6f584b;
+  --accent: #d66b2d;
+  --accent-strong: #9a3e17;
+  --accent-soft: #ffe1c8;
+  --shadow: 0 20px 50px rgba(87, 48, 19, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background:
+    radial-gradient(circle at top left, rgba(255, 211, 160, 0.45), transparent 34%),
+    radial-gradient(circle at bottom right, rgba(149, 209, 166, 0.32), transparent 30%),
+    linear-gradient(180deg, #fff9f1 0%, #fef3df 100%);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--text);
+  font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+  line-height: 1.65;
+}
+
+main, header, footer, section, article {
+  display: block;
+}
+
+a {
+  color: var(--accent-strong);
+}
+
+.shell {
+  width: min(1080px, calc(100vw - 32px));
+  margin: 0 auto;
+  padding: 24px 0 64px;
+}
+
+.site-header,
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.brand-mark {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #ffb86a, #ffdf8d);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.65);
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.hero,
+.card {
+  border: 1px solid var(--panel-border);
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.hero {
+  margin-top: 26px;
+  padding: 42px;
+  border-radius: 30px;
+  background:
+    linear-gradient(160deg, rgba(255, 255, 255, 0.92), rgba(255, 245, 230, 0.94)),
+    linear-gradient(120deg, rgba(255, 184, 106, 0.18), rgba(149, 209, 166, 0.2));
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 12px;
+  line-height: 1.12;
+}
+
+h1 {
+  margin-top: 18px;
+  font-size: clamp(2.5rem, 7vw, 4.6rem);
+  max-width: 12ch;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 4vw, 2.1rem);
+}
+
+p {
+  margin: 0 0 16px;
+  color: var(--muted);
+}
+
+.hero-copy {
+  max-width: 680px;
+  font-size: 1.08rem;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 18px;
+  border-radius: 14px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.button-primary {
+  background: linear-gradient(135deg, #ffab4d, #ffc868);
+  color: #4a240c;
+}
+
+.button-secondary {
+  border-color: rgba(154, 62, 23, 0.16);
+  background: rgba(255, 255, 255, 0.6);
+  color: var(--text);
+}
+
+.grid {
+  display: grid;
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.grid.two {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.card {
+  padding: 24px;
+  border-radius: 22px;
+}
+
+.card ul {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.card p:last-child,
+.card ul:last-child {
+  margin-bottom: 0;
+}
+
+.notice {
+  padding: 16px 18px;
+  border-left: 4px solid var(--accent);
+  border-radius: 14px;
+  background: rgba(255, 171, 77, 0.15);
+}
+
+.site-footer {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(111, 88, 75, 0.16);
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+@media (max-width: 720px) {
+  .shell {
+    width: min(100vw - 24px, 1080px);
+    padding-top: 18px;
+  }
+
+  .hero {
+    padding: 28px 22px;
+    border-radius: 24px;
+  }
+}
