@@ -94,6 +94,26 @@
       margin-top: 10px;
       font-weight: 700;
     }
+  
+    .shots {
+      display: flex;
+      gap: 16px;
+      overflow-x: auto;
+      padding: 6px 2px 16px;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+    }
+    .shots img {
+      flex: 0 0 auto;
+      width: 220px;
+      height: auto;
+      border-radius: 18px;
+      border: 1px solid var(--panel-border);
+      box-shadow: var(--shadow);
+      scroll-snap-align: start;
+      background: #0b0a1a;
+    }
+    @media (max-width: 720px) { .shots img { width: 180px; } }
   </style>
   <link rel="icon" href="./assets/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32.png">
@@ -142,6 +162,20 @@
           <span>Plays offline</span>
           <span>Free to download</span>
         </div>
+      </section>
+
+      <div class="section-head">
+        <h2>Screenshots</h2>
+        <p>A look at the board, the garden you restore, and the level map &mdash; straight from the App Store.</p>
+      </div>
+      <section class="shots" aria-label="GemGame screenshots">
+        <img src="./assets/screenshots/01-gameplay.jpg" width="600" height="1300" loading="lazy" alt="GemGame gameplay — match gems and trigger cascade combos on the neon Galactic Casino board">
+        <img src="./assets/screenshots/02-garden.jpg" width="600" height="1300" loading="lazy" alt="Restore a starlit celestial garden in GemGame by spending the stars you earn">
+        <img src="./assets/screenshots/03-level-map.jpg" width="600" height="1300" loading="lazy" alt="The GemGame level map across handcrafted match 3 levels">
+        <img src="./assets/screenshots/04-shop.jpg" width="600" height="1300" loading="lazy" alt="The GemGame booster and coin shop">
+        <img src="./assets/screenshots/05-main-menu.jpg" width="600" height="1300" loading="lazy" alt="The GemGame main menu">
+        <img src="./assets/screenshots/06-pre-game.jpg" width="600" height="1300" loading="lazy" alt="A GemGame pre-game screen showing the level goals">
+        <img src="./assets/screenshots/07-settings.jpg" width="600" height="1300" loading="lazy" alt="GemGame settings, including Game Center">
       </section>
 
       <div class="section-head">
@@ -334,49 +368,62 @@
   </div>
 
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "VideoGame",
-        "name": "GemGame: Match 3 Puzzle",
-        "alternateName": "GemGame",
-        "description": "GemGame is a cozy, handcrafted match 3 puzzle game for iPhone. Swap six gem types plus striped, wrapped, and rainbow special gems into huge cascade combos, then spend the stars you earn restoring a starlit celestial garden. No ads, no forced timers, and no energy waits. Free to download with optional in-app purchases, plus Game Center leaderboards and achievements.",
-        "applicationCategory": "GameApplication",
-        "genre": ["Puzzle", "Casual", "Match 3"],
-        "operatingSystem": "iOS",
-        "url": "https://georgepwall1991.github.io/fleet-commander-site/gemgame/",
-        "image": "https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/og-image.png",
-        "inLanguage": "en",
-        "author": {
-          "@type": "Person",
-          "name": "George Wall"
-        },
-        "publisher": {
-          "@type": "Person",
-          "name": "George Wall"
-        },
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/app/id6761720994"
-        }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "VideoGame",
+      "name": "GemGame: Match 3 Puzzle",
+      "alternateName": "GemGame",
+      "description": "GemGame is a cozy, handcrafted match 3 puzzle game for iPhone. Swap six gem types plus striped, wrapped, and rainbow special gems into huge cascade combos, then spend the stars you earn restoring a starlit celestial garden. No ads, no forced timers, and no energy waits. Free to download with optional in-app purchases, plus Game Center leaderboards and achievements.",
+      "applicationCategory": "GameApplication",
+      "genre": [
+        "Puzzle",
+        "Casual",
+        "Match 3"
+      ],
+      "operatingSystem": "iOS",
+      "url": "https://georgepwall1991.github.io/fleet-commander-site/gemgame/",
+      "image": "https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/og-image.png",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Person",
+        "name": "George Wall"
       },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://georgepwall1991.github.io/fleet-commander-site/gemgame/"
-          }
-        ]
-      }
-    ]
-  }
+      "publisher": {
+        "@type": "Person",
+        "name": "George Wall"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://apps.apple.com/app/id6761720994"
+      },
+      "screenshot": [
+        "https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/screenshots/01-gameplay.jpg",
+        "https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/screenshots/02-garden.jpg",
+        "https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/screenshots/03-level-map.jpg",
+        "https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/screenshots/04-shop.jpg",
+        "https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/screenshots/05-main-menu.jpg",
+        "https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/screenshots/06-pre-game.jpg",
+        "https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/screenshots/07-settings.jpg"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://georgepwall1991.github.io/fleet-commander-site/gemgame/"
+        }
+      ]
+    }
+  ]
+}
   </script>
 </body>
 </html>
