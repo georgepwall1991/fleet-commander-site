@@ -1,0 +1,16 @@
+# GemGame: Match 3 Puzzle
+
+> A cozy, handcrafted match 3 puzzle game for iPhone with a starlit garden meta-layer. Free to download, no ads, no energy waits, no forced timers.
+
+GemGame is a casual match 3 puzzle game for iOS by indie developer George Wall. Swap six gem types plus striped, wrapped, and rainbow special gems into cascade combos, earn stars, and spend them restoring celestial garden districts. It includes daily rewards, a Celestial Pass reward track, mission contracts, boosters, on-demand hints, and Game Center leaderboards and achievements. Free with optional in-app purchases; no ads or third-party trackers; plays offline. iPhone / iOS only.
+
+## Pages
+- [Home](https://georgepwall1991.github.io/fleet-commander-site/gemgame/): Overview, features, and store model
+- [FAQ](https://georgepwall1991.github.io/fleet-commander-site/gemgame/faq/): Is it free? Does it have ads? Can I play offline? Game Center?
+- [Press kit](https://georgepwall1991.github.io/fleet-commander-site/gemgame/press/): Fact sheet and short/medium/long descriptions for media and creators
+- [Privacy policy](https://georgepwall1991.github.io/fleet-commander-site/gemgame/privacy/): Local save data and Apple in-app purchase handling
+- [Support](https://georgepwall1991.github.io/fleet-commander-site/gemgame/support/): Restore purchases and bug reporting
+- [Terms](https://georgepwall1991.github.io/fleet-commander-site/gemgame/terms/): Terms of use
+
+## App Store
+- [GemGame: Match 3 Puzzle](https://apps.apple.com/app/id6761720994): Free download for iPhone

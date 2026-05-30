@@ -1,0 +1,11 @@
+/* TEAM */
+Developer: George Wall
+Site: https://georgepwall1991.github.io/fleet-commander-site/
+
+/* GAMES */
+GemGame: Match 3 Puzzle  -  https://georgepwall1991.github.io/fleet-commander-site/gemgame/
+Fleet Commander  -  https://georgepwall1991.github.io/fleet-commander-site/
+
+/* SITE */
+Standards: HTML5, CSS3, Schema.org JSON-LD
+Hosting: GitHub Pages
