@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GemGame: Match-3-Puzzle &mdash; gem&uuml;tliches Match 3 ohne Werbung</title>
+  <meta name="description" content="GemGame ist ein gem&uuml;tliches Match-3-Puzzle f&uuml;rs iPhone: Kaskaden-Combos verketten, Sternengarten neu erbl&uuml;hen lassen. Keine Werbung, kein Druck. Gratis.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+  <link rel="canonical" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/de/">
+  <meta name="apple-itunes-app" content="app-id=6761720994">
+
+  <link rel="alternate" hreflang="en" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/">
+  <link rel="alternate" hreflang="fr" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/fr/">
+  <link rel="alternate" hreflang="de" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/de/">
+  <link rel="alternate" hreflang="it" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/it/">
+  <link rel="alternate" hreflang="x-default" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:site_name" content="GemGame">
+  <meta property="og:title" content="GemGame: Match-3-Puzzle &mdash; gem&uuml;tliches Garten-Match-3 f&uuml;rs iPhone">
+  <meta property="og:description" content="Ein gem&uuml;tliches, handgemachtes Match-3-Puzzle f&uuml;rs iPhone. Verkette Kaskaden-Combos und erwecke einen Sternengarten neu. Keine Werbung, keine Energie-Wartezeiten, keine erzwungenen Timer. Gratis-Download mit optionalen In-App-K&auml;ufen.">
+  <meta property="og:url" content="https://georgepwall1991.github.io/fleet-commander-site/gemgame/de/">
+  <meta property="og:image" content="https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="GemGame &mdash; ein neonfarbenes Galactic-Casino-Match-3-Brett mit einem Sternengarten als Meta-Ebene">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GemGame: Match-3-Puzzle &mdash; gem&uuml;tliches Garten-Match-3 f&uuml;rs iPhone">
+  <meta name="twitter:description" content="Ein gem&uuml;tliches, handgemachtes Match-3-Puzzle f&uuml;rs iPhone. Verkette Kaskaden-Combos und erwecke einen Sternengarten neu. Keine Werbung, keine Energie-Wartezeiten.">
+  <meta name="twitter:image" content="https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/og-image.png">
+  <meta name="twitter:image:alt" content="GemGame: Match-3-Puzzle &mdash; gem&uuml;tliches Match 3 mit Sternengarten, gratis f&uuml;rs iPhone">
+
+  <style>
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 22px;
+    }
+    .hero-badges span {
+      display: inline-flex;
+      align-items: center;
+      padding: 5px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid var(--panel-border);
+      color: var(--accent-strong);
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
+    .section-head {
+      margin-top: 38px;
+    }
+    .section-head h2 {
+      margin-bottom: 6px;
+    }
+    .section-head p {
+      max-width: 720px;
+    }
+    .grid.three {
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+    .card h3 {
+      font-size: 1.18rem;
+      color: var(--text);
+    }
+    .price-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent-strong);
+      font-weight: 800;
+      letter-spacing: 0.02em;
+    }
+    .iap-list {
+      margin: 14px 0 0;
+      padding-left: 18px;
+      color: var(--muted);
+    }
+    .faq-teaser dt {
+      font-weight: 800;
+      color: var(--text);
+      margin-top: 12px;
+    }
+    .faq-teaser dt:first-child {
+      margin-top: 0;
+    }
+    .faq-teaser dd {
+      margin: 4px 0 0;
+      color: var(--muted);
+    }
+    .contact-line {
+      margin-top: 10px;
+      font-weight: 700;
+    }
+
+    .shots{display:flex;gap:16px;overflow-x:auto;padding:6px 2px 16px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+    .shots picture{flex:0 0 auto;width:220px;display:block;scroll-snap-align:start}
+    .shots picture img{width:100%;height:auto;border-radius:18px;border:1px solid var(--panel-border);box-shadow:var(--shadow);background:#0b0a1a;display:block}
+    @media (max-width:720px){.shots picture{width:180px}}
+  </style>
+
+  <link rel="stylesheet" href="../assets/site.css">
+  <link rel="icon" href="../assets/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <meta name="theme-color" content="#fff9f1">
+</head>
+<body>
+  <div class="shell">
+    <header class="site-header">
+      <a class="brand" href="./">
+        <span class="brand-mark">GG</span>
+        <span>GemGame</span>
+      </a>
+      <nav class="nav" aria-label="Seite">
+        <a href="./">Start</a>
+        <a href="../guide/">Anleitung</a>
+        <a href="../faq/">FAQ</a>
+        <a href="../press/">Presse</a>
+        <a href="../support/">Hilfe</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <img class="app-hero-icon" src="../assets/icon-512.png" fetchpriority="high" decoding="async" alt="App-Symbol von GemGame: Match-3-Puzzle" width="104" height="104" style="border-radius:24px;box-shadow:0 12px 30px rgba(87,48,19,.20);display:block;margin-bottom:14px">
+        <div class="eyebrow">Gem&uuml;tliches Match-3-Puzzle &middot; iPhone</div>
+        <h1>Edelsteine matchen. Combos verketten. Garten erbl&uuml;hen lassen.</h1>
+        <p class="hero-copy">
+          GemGame ist ein gem&uuml;tliches, handgemachtes Match-3-Puzzle f&uuml;rs iPhone im
+          markanten Galactic-Casino-Look. Tausche sechs Edelstein-Typen plus gestreifte,
+          umh&uuml;llte und Regenbogen-Spezialsteine zu riesigen Kaskaden-Combos &mdash; und
+          erwecke mit den verdienten Sternen einen funkelnden Himmelsgarten wieder zum Leben.
+          Keine Werbung, keine erzwungenen Timer, keine Energie-Wartezeiten: ein entspanntes
+          Offline-Puzzle, das du ganz nach deinen Regeln spielst.
+        </p>
+        <div class="button-row">
+          <a class="button button-primary" href="https://apps.apple.com/app/id6761720994">Im App Store laden</a>
+          <a class="button button-secondary" href="../faq/">FAQ lesen</a>
+        </div>
+        <div class="hero-badges" aria-label="Auf einen Blick">
+          <span>Keine Werbung</span>
+          <span>Keine Energie-Wartezeiten</span>
+          <span>Keine erzwungenen Timer</span>
+          <span>Offline spielbar</span>
+          <span>Gratis-Download</span>
+        </div>
+      </section>
+
+      <div class="section-head">
+        <h2>Screenshots</h2>
+        <p>Ein Blick auf das Spielbrett, den Garten zum Wiederaufbau und die Levelkarte &mdash; direkt aus dem App Store.</p>
+      </div>
+      <section class="shots" aria-label="Screenshots">
+        <picture><source type="image/webp" srcset="../assets/screenshots/01-gameplay.webp"><img src="../assets/screenshots/01-gameplay.jpg" width="600" height="1300" loading="lazy" alt="GemGame-Gameplay &mdash; Edelsteine matchen und Kaskaden-Combos auf dem neonfarbenen Galactic-Casino-Brett ausl&ouml;sen"></picture>
+        <picture><source type="image/webp" srcset="../assets/screenshots/02-garden.webp"><img src="../assets/screenshots/02-garden.jpg" width="600" height="1300" loading="lazy" alt="In GemGame einen funkelnden Himmelsgarten mit den verdienten Sternen wieder aufbauen"></picture>
+        <picture><source type="image/webp" srcset="../assets/screenshots/03-level-map.webp"><img src="../assets/screenshots/03-level-map.jpg" width="600" height="1300" loading="lazy" alt="Die Levelkarte von GemGame mit den handgestalteten Match-3-Leveln"></picture>
+        <picture><source type="image/webp" srcset="../assets/screenshots/04-shop.webp"><img src="../assets/screenshots/04-shop.jpg" width="600" height="1300" loading="lazy" alt="Der Booster- und M&uuml;nz-Shop von GemGame"></picture>
+        <picture><source type="image/webp" srcset="../assets/screenshots/05-main-menu.webp"><img src="../assets/screenshots/05-main-menu.jpg" width="600" height="1300" loading="lazy" alt="Das Hauptmen&uuml; von GemGame"></picture>
+        <picture><source type="image/webp" srcset="../assets/screenshots/06-pre-game.webp"><img src="../assets/screenshots/06-pre-game.jpg" width="600" height="1300" loading="lazy" alt="Ein Vorschau-Bildschirm in GemGame mit den Levelzielen"></picture>
+        <picture><source type="image/webp" srcset="../assets/screenshots/07-settings.webp"><img src="../assets/screenshots/07-settings.jpg" width="600" height="1300" loading="lazy" alt="Die Einstellungen von GemGame, inklusive Game Center"></picture>
+      </section>
+
+      <div class="section-head">
+        <h2>Das erwartet dich</h2>
+        <p>
+          Ein handgemachtes Match-3-Puzzle mit echter Tiefe: handgestaltete Level auf einer fairen,
+          ausbalancierten Schwierigkeitskurve, tiefes Verketten von Spezialsteinen und eine
+          Garten-Meta-Ebene, die deine gesammelten Sterne sichtbar werden l&auml;sst.
+        </p>
+      </div>
+
+      <section class="grid three" aria-label="Funktionen">
+        <article class="card">
+          <h3>Kaskaden-Combos &amp; Spezialsteine</h3>
+          <p>
+            Handgestaltete Match-3-Level mit Punkte-, Sammel- und R&auml;umzielen und einer Wertung von
+            1 bis 3 Sternen. Sechs Edelstein-Typen sowie gestreifte, umh&uuml;llte und Regenbogen-Spezialsteine
+            verbinden sich zu riesigen Kaskaden-Combos &mdash; f&uuml;r echte Puzzle-Tiefe und gro&szlig;e,
+            befriedigende Belohnungen.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Einen Sternengarten wieder aufbauen</h3>
+          <p>
+            Eine Himmelsgarten-Meta-Ebene verwandelt das Matchen in sichtbaren Fortschritt. Gib die
+            verdienten Sterne aus, um Himmelsbezirke wie die Sternenlicht-Promenade und den
+            Mondbl&uuml;ten-Platz neu zu errichten &mdash; und schalte Vorteile frei, die dir im
+            n&auml;chsten Puzzle helfen.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>T&auml;gliche Belohnungen, Celestial Pass &amp; Missionen</h3>
+          <p>
+            Komm f&uuml;r t&auml;gliche Belohnungen zur&uuml;ck, erf&uuml;lle Missionsauftr&auml;ge und
+            klettere die Belohnungsleiter des Celestial Pass hinauf &mdash; mit kostenloser und
+            Premium-Stufe. Ein Leben-System, das sich mit der Zeit wieder auff&uuml;llt, eine
+            M&uuml;nz-Wirtschaft und ein Booster-Shop runden den Spielfluss ab.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Booster &amp; Tipps auf Abruf</h3>
+          <p>
+            Festgefahren auf einem kniffligen Brett? Aktiviere den Tipp-Power-up auf Abruf oder setze
+            einen Hammer-, Mischen- oder Extra-Z&uuml;ge-Booster ein, wenn du etwas Hilfe brauchst
+            &mdash; nie, weil ein Timer dich zum Kauf dr&auml;ngt.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Game-Center-Bestenlisten</h3>
+          <p>
+            F&uuml;r alle, die echten Wettbewerb suchen: GemGame bietet drei Game-Center-Bestenlisten
+            (Sterne gesamt, h&ouml;chstes Level und beste Punktzahl) sowie sechs Erfolge. An der Spitze
+            entscheidet K&ouml;nnen &mdash; nicht dein Geldbeutel.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Keine Werbung, keine Energie, offline</h3>
+          <p>
+            Entspanntes Offline-Spiel ohne Werbung, ohne Tracker von Drittanbietern, ohne erzwungene
+            Timer und ohne Energie-Wartezeiten. Leben f&uuml;llen sich mit der Zeit wieder auf und
+            Neustarts gehen schnell &mdash; du entscheidest, wann eine gem&uuml;tliche Runde endet.
+          </p>
+        </article>
+      </section>
+
+      <div class="section-head">
+        <h2>Store-Modell</h2>
+        <p>
+          GemGame ist gratis zum Herunterladen, mit optionalen In-App-K&auml;ufen ohne Druck. Zum
+          Spielen ist kein Abo n&ouml;tig, und nirgends im Spiel gibt es Werbung oder Tracker von
+          Drittanbietern.
+        </p>
+      </div>
+
+      <section class="grid two" aria-label="Store-Modell und Preise">
+        <article class="card">
+          <h3>Gratis zum Herunterladen</h3>
+          <p class="price-tag">Gratis &middot; optionale In-App-K&auml;ufe</p>
+          <p>
+            Spiele die komplette handgemachte Kampagne kostenlos. Die optionalen K&auml;ufe sind als
+            Extras ohne Druck gedacht &mdash; es gibt keine Pay-to-win-Schwierigkeitsspitze, die dir
+            Booster aufdr&auml;ngen soll.
+          </p>
+          <ul class="iap-list">
+            <li>M&uuml;nzpakete f&uuml;r den Shop im Spiel</li>
+            <li>Celestial Pass pro Kapitel (Premium-Belohnungsleiter)</li>
+            <li>Ein einmaliges Hard-Mode-Paket f&uuml;r mehr Herausforderung</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Fair von Grund auf</h3>
+          <p>
+            Jedes Level wird von einem einzelnen Indie-Entwickler von Hand gestaltet, auf einer fairen,
+            ausbalancierten Schwierigkeitskurve &mdash; kein algorithmisch erzeugter Grind, der darauf
+            getrimmt ist, deinen Geldbeutel zu leeren. Kein Abo, keine Werbung, keine Drittanbieter-Tracker.
+          </p>
+          <p>
+            Fortschritt und Einstellungen werden auf deinem Ger&auml;t gespeichert. K&auml;ufe und
+            Wiederherstellungen laufen &uuml;ber die App-Store-Infrastruktur von Apple.
+          </p>
+        </article>
+      </section>
+
+      <div class="section-head">
+        <h2>H&auml;ufige Fragen</h2>
+        <p>Ein paar schnelle Antworten &mdash; alle Details zu K&auml;ufen, Wiederherstellungen und mehr findest du in der FAQ.</p>
+      </div>
+
+      <section class="grid two" aria-label="FAQ-Vorschau">
+        <article class="card faq-teaser">
+          <dl>
+            <dt>Ist GemGame kostenlos?</dt>
+            <dd>Ja. GemGame ist gratis zum Herunterladen, mit optionalen In-App-K&auml;ufen und ohne erforderliches Abo.</dd>
+            <dt>Hat GemGame Werbung?</dt>
+            <dd>Nein. Es gibt nirgends im Spiel Werbung oder Tracker von Drittanbietern.</dd>
+            <dt>Kann ich GemGame offline spielen?</dt>
+            <dd>Ja. GemGame ist ein entspanntes Offline-Match-3-Puzzle &mdash; kein WLAN n&ouml;tig, keine Energie-Wartezeiten, keine erzwungenen Timer.</dd>
+          </dl>
+        </article>
+
+        <article class="card">
+          <h3>Noch Fragen?</h3>
+          <p>
+            Die vollst&auml;ndige FAQ erkl&auml;rt, wie du K&auml;ufe wiederherstellst, wie sich Leben
+            auff&uuml;llen, was der Celestial Pass und das Hard-Mode-Paket enthalten und wie Game Center
+            funktioniert.
+          </p>
+          <div class="button-row">
+            <a class="button button-secondary" href="../faq/">FAQ &ouml;ffnen</a>
+          </div>
+        </article>
+      </section>
+
+      <div class="section-head">
+        <h2>Presse &amp; Kontakt</h2>
+        <p>Du berichtest &uuml;ber GemGame oder brauchst Hilfe? Hier f&auml;ngst du an.</p>
+      </div>
+
+      <section class="grid two" aria-label="Presse und Kontakt">
+        <article class="card">
+          <h3>Pressekit</h3>
+          <p>
+            GemGame wird von George Wall entwickelt, einem einzelnen Indie-Entwickler. Die Presseseite
+            enth&auml;lt den Elevator-Pitch, die Funktionsliste, Key-Art und Kontaktdaten f&uuml;r
+            Berichte und Rezensionsanfragen.
+          </p>
+          <div class="button-row">
+            <a class="button button-secondary" href="../press/">Zur Presseseite</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Hilfe &amp; Kontakt</h3>
+          <p>
+            Brauchst du Hilfe bei einer Kaufwiederherstellung, m&ouml;chtest einen Fehler melden oder
+            Feedback zu einem Level geben? Die Hilfeseite bietet eine Schritt-f&uuml;r-Schritt-Anleitung
+            und eine direkte E-Mail-Adresse.
+          </p>
+          <p class="contact-line">
+            <a href="mailto:georgewall1991@icloud.com">georgewall1991@icloud.com</a>
+          </p>
+          <div class="button-row">
+            <a class="button button-secondary" href="../support/">Hilfe &ouml;ffnen</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="hero" aria-label="GemGame herunterladen" style="margin-top: 38px;">
+        <h2>Bereit zum Matchen, Combo-Verketten und Garten-Erbl&uuml;hen?</h2>
+        <p class="hero-copy">
+          Lade GemGame gratis aufs iPhone und starte mit Kaskaden-Combos, dem Wiederaufbau von
+          Himmelsbezirken und der Jagd nach Game-Center-Ruhm &mdash; keine Werbung, keine
+          Energie-Wartezeiten, kein Druck.
+        </p>
+        <div class="button-row">
+          <a class="button button-primary" href="https://apps.apple.com/app/id6761720994">Aufs iPhone holen &mdash; App Store</a>
+        </div>
+      </section>
+
+      <div class="section-head">
+        <h2>Lernen &amp; besser spielen</h2>
+        <p>Neu im Match 3 oder auf der Jagd nach drei Sternen auf jedem Brett? Hier geht es tiefer.</p>
+      </div>
+      <section class="grid three" aria-label="Anleitungen">
+        <article class="card">
+          <h3>So wird gespielt</h3>
+          <p>Match-3-Grundlagen, die drei Zielarten und wie gestreifte, umh&uuml;llte und Regenbogen-Spezialsteine funktionieren.</p>
+          <a href="../guide/">Anleitung lesen</a>
+        </article>
+        <article class="card">
+          <h3>Tipps &amp; Strategie</h3>
+          <p>Plane Kaskaden, baue Spezialsteine auf und spare sie auf &mdash; und lass den Garten schneller wachsen, ohne Geld auszugeben.</p>
+          <a href="../tips/">Tipps ansehen</a>
+        </article>
+        <article class="card">
+          <h3>FAQ &amp; Neuigkeiten</h3>
+          <p>Schnelle Antworten auf h&auml;ufige Fragen und die neuesten Release-Notes.</p>
+          <a href="../faq/">FAQ</a> &middot; <a href="../updates/">Neuigkeiten</a>
+        </article>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; 2026 GemGame &middot; George Wall</span>
+      <span>
+        <a href="./">Start</a> |
+        <a href="../privacy/">Datenschutz</a> |
+        <a href="../support/">Hilfe</a> |
+        <a href="../terms/">Nutzungsbedingungen</a>
+      </span>
+    </footer>
+  </div>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "VideoGame",
+      "name": "GemGame: Match 3 Puzzle",
+      "alternateName": "GemGame",
+      "description": "GemGame ist ein gemütliches, handgemachtes Match-3-Puzzle fürs iPhone. Tausche sechs Edelstein-Typen plus gestreifte, umhüllte und Regenbogen-Spezialsteine zu riesigen Kaskaden-Combos und erwecke mit den verdienten Sternen einen funkelnden Himmelsgarten wieder zum Leben. Keine Werbung, keine erzwungenen Timer und keine Energie-Wartezeiten. Gratis zum Herunterladen mit optionalen In-App-Käufen, dazu Game-Center-Bestenlisten und Erfolge.",
+      "applicationCategory": "GameApplication",
+      "genre": [
+        "Puzzle",
+        "Casual",
+        "Match 3"
+      ],
+      "operatingSystem": "iOS",
+      "url": "https://georgepwall1991.github.io/fleet-commander-site/gemgame/de/",
+      "image": "https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/og-image.png",
+      "inLanguage": "de",
+      "author": {
+        "@type": "Person",
+        "name": "George Wall"
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "George Wall"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://apps.apple.com/app/id6761720994"
+      },
+      "screenshot": [
+        "https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/screenshots/01-gameplay.jpg",
+        "https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/screenshots/02-garden.jpg",
+        "https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/screenshots/03-level-map.jpg",
+        "https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/screenshots/04-shop.jpg",
+        "https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/screenshots/05-main-menu.jpg",
+        "https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/screenshots/06-pre-game.jpg",
+        "https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/screenshots/07-settings.jpg"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "GemGame",
+          "item": "https://georgepwall1991.github.io/fleet-commander-site/gemgame/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Deutsch",
+          "item": "https://georgepwall1991.github.io/fleet-commander-site/gemgame/de/"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</body>
+</html>
