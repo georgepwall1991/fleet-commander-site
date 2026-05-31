@@ -45,6 +45,10 @@
     .badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px;padding:0;list-style:none}
     .badge{display:inline-flex;align-items:center;padding:5px 12px;border-radius:999px;background:rgba(255,255,255,.7);border:1px solid var(--panel-border);color:var(--accent-strong);font-size:.82rem;font-weight:700}
     .store-model{margin-top:28px}
+  
+    .section-head{margin-top:38px}
+    .section-head p{max-width:720px}
+    .grid.three{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
   </style>
 <script type="application/ld+json">
 {
@@ -174,7 +178,31 @@
   </section>
 </main>
 
-<footer class="site-footer">
+
+      <!-- cluster-injected -->
+      <div class="section-head">
+  <h2>Opi ja pelaa paremmin</h2>
+  <p>Sukella syvemmälle GemGameen ja ota irti enemmän jokaisesta siirrosta.</p>
+</div>
+<section class="grid three" aria-label="Oppaat">
+  <article class="card">
+    <h3>Näin pelaat</h3>
+    <p>Opi match-3-pelin perusteet ja erikoistimanttien käyttö.</p>
+    <a href="./guide/">Lue opas</a>
+  </article>
+  <article class="card">
+    <h3>Vinkit ja strategia</h3>
+    <p>Suunnittele ketjureaktiot, säästä erikoistimantit ja kasvata puutarhaasi.</p>
+    <a href="./tips/">Katso vinkit</a>
+  </article>
+  <article class="card">
+    <h3>UKK</h3>
+    <p>Nopeat vastaukset: ilmainen? mainoksia? toimiiko offline-tilassa?</p>
+    <a href="./faq/">Lue UKK</a>
+  </article>
+</section>
+
+    <footer class="site-footer">
   <nav aria-label="Alatunniste">
     <a href="./">Etusivu</a>
     <a href="../privacy/">Tietosuoja</a>

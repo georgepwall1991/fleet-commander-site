@@ -107,6 +107,10 @@
     .shots picture{flex:0 0 auto;width:220px;display:block;scroll-snap-align:start}
     .shots picture img{width:100%;height:auto;border-radius:18px;border:1px solid var(--panel-border);box-shadow:var(--shadow);background:#0b0a1a;display:block}
     @media (max-width:720px){.shots picture{width:180px}}
+  
+    .section-head{margin-top:38px}
+    .section-head p{max-width:720px}
+    .grid.three{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
   </style>
   <link rel="icon" href="../assets/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
@@ -372,6 +376,30 @@
       </section>
 
     </main>
+
+    
+      <!-- cluster-injected -->
+      <div class="section-head">
+  <h2>Impara e gioca meglio</h2>
+  <p>Approfondisci GemGame e porta le tue partite a un livello superiore.</p>
+</div>
+<section class="grid three" aria-label="Guide">
+  <article class="card">
+    <h3>Come si gioca</h3>
+    <p>Le basi del match-3 e tutto sulle gemme speciali.</p>
+    <a href="./guide/">Leggi la guida</a>
+  </article>
+  <article class="card">
+    <h3>Consigli e strategia</h3>
+    <p>Pianifica le cascate, conserva le gemme speciali e fai crescere il giardino.</p>
+    <a href="./tips/">Scopri i consigli</a>
+  </article>
+  <article class="card">
+    <h3>FAQ</h3>
+    <p>Risposte rapide: è gratis? Ci sono pubblicità? Funziona offline?</p>
+    <a href="./faq/">Leggi le FAQ</a>
+  </article>
+</section>
 
     <footer class="site-footer">
       <span>&copy; 2026 GemGame &middot; George Wall</span>

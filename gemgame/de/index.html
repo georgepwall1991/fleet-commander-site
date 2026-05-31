@@ -106,6 +106,10 @@
     .shots picture{flex:0 0 auto;width:220px;display:block;scroll-snap-align:start}
     .shots picture img{width:100%;height:auto;border-radius:18px;border:1px solid var(--panel-border);box-shadow:var(--shadow);background:#0b0a1a;display:block}
     @media (max-width:720px){.shots picture{width:180px}}
+  
+    .section-head{margin-top:38px}
+    .section-head p{max-width:720px}
+    .grid.three{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
   </style>
 
   <link rel="stylesheet" href="../assets/site.css">
@@ -377,6 +381,30 @@
       </section>
 
     </main>
+
+    
+      <!-- cluster-injected -->
+      <div class="section-head">
+  <h2>Lernen und besser spielen</h2>
+  <p>Tauche tiefer in GemGame ein und hol mehr aus jedem Zug heraus.</p>
+</div>
+<section class="grid three" aria-label="Anleitungen">
+  <article class="card">
+    <h3>So wird gespielt</h3>
+    <p>Lerne die Match-3-Grundlagen und wie besondere Edelsteine funktionieren.</p>
+    <a href="./guide/">Anleitung lesen</a>
+  </article>
+  <article class="card">
+    <h3>Tipps und Strategie</h3>
+    <p>Plane Kettenreaktionen, spare dir besondere Steine auf und lass deinen Garten wachsen.</p>
+    <a href="./tips/">Tipps ansehen</a>
+  </article>
+  <article class="card">
+    <h3>Häufige Fragen</h3>
+    <p>Schnelle Antworten: Ist es kostenlos? Gibt es Werbung? Funktioniert es offline?</p>
+    <a href="./faq/">FAQ lesen</a>
+  </article>
+</section>
 
     <footer class="site-footer">
       <span>&copy; 2026 GemGame &middot; George Wall</span>
