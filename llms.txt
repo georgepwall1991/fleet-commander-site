@@ -1,0 +1,21 @@
+# George Wall — indie iPhone games
+
+> Solo-developer site for two free iPhone games: GemGame (a cozy match 3 puzzle) and Fleet Commander (a single-player space strategy game). Both are free to download with optional, no-pressure in-app purchases and no ads.
+
+This site (georgepwall1991.github.io/fleet-commander-site) is built and run by George Wall, a solo indie iOS developer. It hosts the marketing, FAQ, support, and policy pages for each game. GemGame has the most extensive content, including a multilingual guide, tips, glossary, and FAQ. A detailed GemGame-specific index lives at https://georgepwall1991.github.io/fleet-commander-site/gemgame/llms.txt.
+
+## GemGame: Match 3 Puzzle
+- [GemGame home](https://georgepwall1991.github.io/fleet-commander-site/gemgame/): Cozy, handcrafted match 3 puzzle for iPhone — chain striped, wrapped, and rainbow cascade combos and restore a starlit garden. Free to download, no ads, no pay-to-win. Lives refill over time for free.
+- [GemGame AI index](https://georgepwall1991.github.io/fleet-commander-site/gemgame/llms.txt): Detailed machine-readable index of the GemGame section
+- [GemGame FAQ](https://georgepwall1991.github.io/fleet-commander-site/gemgame/faq/): Is it free? Does it have ads? Can I play offline? How do lives work? Game Center?
+- [GemGame guide](https://georgepwall1991.github.io/fleet-commander-site/gemgame/guide/): How to play match 3 and how special gems work
+- [GemGame press kit](https://georgepwall1991.github.io/fleet-commander-site/gemgame/press/): Fact sheet and short/medium/long descriptions for media and creators
+- [App Store](https://apps.apple.com/app/id6761720994): GemGame — free download for iPhone
+
+## Fleet Commander
+- [Fleet Commander home](https://georgepwall1991.github.io/fleet-commander-site/): Free single-player space strategy game for iPhone — colonise star systems, build task forces, and research upgrades. Optional Research Lab plans speed research by 25% while active; no ads, and paid plans do not alter combat power or matchmaking.
+
+## Policies and support
+- [Privacy](https://georgepwall1991.github.io/fleet-commander-site/privacy/): Local save data and Apple in-app purchase handling
+- [Support](https://georgepwall1991.github.io/fleet-commander-site/support/): Restore purchases and report issues
+- [Terms](https://georgepwall1991.github.io/fleet-commander-site/terms/): Terms of use

@@ -1,4 +1,42 @@
+# All crawlers may access the whole site.
 User-agent: *
+Allow: /
+
+# Explicit allow for AI / LLM crawlers (training and retrieval/answer engines).
+# Stated explicitly so AI search access is an intentional signal, not just an
+# absence of disallow rules. A curated, machine-readable index is published at
+# https://georgepwall1991.github.io/fleet-commander-site/llms.txt
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: CCBot
 Allow: /
 
 Sitemap: https://georgepwall1991.github.io/fleet-commander-site/sitemap.xml
