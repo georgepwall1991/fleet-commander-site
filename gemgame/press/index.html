@@ -10,6 +10,7 @@
   <meta name="apple-itunes-app" content="app-id=6761720994">
 
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
   <meta property="og:site_name" content="GemGame">
   <meta property="og:title" content="GemGame Press Kit — Fact Sheet, Descriptions &amp; Assets">
   <meta property="og:description" content="A press kit for GemGame: a cozy, handcrafted match-3 puzzle for iPhone with a starlit garden meta-layer. Fact sheet, ready-to-use descriptions, feature list, and asset list.">
@@ -85,6 +86,9 @@
     }
     .shots{display:flex;gap:14px;overflow-x:auto;padding:6px 2px 14px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
     .shots img{flex:0 0 auto;width:200px;height:auto;border-radius:16px;border:1px solid var(--panel-border);box-shadow:var(--shadow);scroll-snap-align:start;background:#0b0a1a}
+    .shots picture{flex:0 0 auto;width:200px;display:block;scroll-snap-align:start}
+    .shots picture img{width:100%;height:auto;border-radius:16px;border:1px solid var(--panel-border);box-shadow:var(--shadow);background:#0b0a1a;display:block}
+    @media (max-width:720px){.shots picture{width:164px}}
   </style>
 
   <script type="application/ld+json">
@@ -275,13 +279,13 @@ GemGame is free to download with optional, no-pressure purchases — coin packs,
         <h2>Screenshots</h2>
         <p>The seven App Store screenshots, free to use in coverage. Right-click any image to save, or email for original resolutions.</p>
         <div class="shots" aria-label="GemGame screenshots">
-        <img src="../assets/screenshots/01-gameplay.jpg" width="600" height="1300" loading="lazy" alt="GemGame gameplay — cascade combos on the neon board">
-        <img src="../assets/screenshots/02-garden.jpg" width="600" height="1300" loading="lazy" alt="Restoring the starlit garden in GemGame">
-        <img src="../assets/screenshots/03-level-map.jpg" width="600" height="1300" loading="lazy" alt="The GemGame level map">
-        <img src="../assets/screenshots/04-shop.jpg" width="600" height="1300" loading="lazy" alt="The GemGame booster shop">
-        <img src="../assets/screenshots/05-main-menu.jpg" width="600" height="1300" loading="lazy" alt="The GemGame main menu">
-        <img src="../assets/screenshots/06-pre-game.jpg" width="600" height="1300" loading="lazy" alt="A GemGame pre-game goals screen">
-        <img src="../assets/screenshots/07-settings.jpg" width="600" height="1300" loading="lazy" alt="GemGame settings with Game Center">
+        <picture><source type="image/webp" srcset="../assets/screenshots/01-gameplay.webp"><img src="../assets/screenshots/01-gameplay.jpg" width="600" height="1300" loading="lazy" alt="GemGame gameplay — cascade combos on the neon board"></picture>
+        <picture><source type="image/webp" srcset="../assets/screenshots/02-garden.webp"><img src="../assets/screenshots/02-garden.jpg" width="600" height="1300" loading="lazy" alt="Restoring the starlit garden in GemGame"></picture>
+        <picture><source type="image/webp" srcset="../assets/screenshots/03-level-map.webp"><img src="../assets/screenshots/03-level-map.jpg" width="600" height="1300" loading="lazy" alt="The GemGame level map"></picture>
+        <picture><source type="image/webp" srcset="../assets/screenshots/04-shop.webp"><img src="../assets/screenshots/04-shop.jpg" width="600" height="1300" loading="lazy" alt="The GemGame booster shop"></picture>
+        <picture><source type="image/webp" srcset="../assets/screenshots/05-main-menu.webp"><img src="../assets/screenshots/05-main-menu.jpg" width="600" height="1300" loading="lazy" alt="The GemGame main menu"></picture>
+        <picture><source type="image/webp" srcset="../assets/screenshots/06-pre-game.webp"><img src="../assets/screenshots/06-pre-game.jpg" width="600" height="1300" loading="lazy" alt="A GemGame pre-game goals screen"></picture>
+        <picture><source type="image/webp" srcset="../assets/screenshots/07-settings.webp"><img src="../assets/screenshots/07-settings.jpg" width="600" height="1300" loading="lazy" alt="GemGame settings with Game Center"></picture>
         </div>
       </section>
 
