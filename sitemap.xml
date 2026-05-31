@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://georgepwall1991.github.io/fleet-commander-site/</loc>
     <lastmod>2026-05-30</lastmod>
@@ -24,6 +24,14 @@
     <loc>https://georgepwall1991.github.io/fleet-commander-site/gemgame/</loc>
     <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
+    <image:image><image:loc>https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/og-image.png</image:loc><image:caption>GemGame: Match 3 Puzzle</image:caption></image:image>
+    <image:image><image:loc>https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/screenshots/01-gameplay.jpg</image:loc><image:caption>GemGame gameplay — cascade combos on the neon board</image:caption></image:image>
+    <image:image><image:loc>https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/screenshots/02-garden.jpg</image:loc><image:caption>Restoring the starlit garden in GemGame</image:caption></image:image>
+    <image:image><image:loc>https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/screenshots/03-level-map.jpg</image:loc><image:caption>The GemGame level map</image:caption></image:image>
+    <image:image><image:loc>https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/screenshots/04-shop.jpg</image:loc><image:caption>The GemGame booster shop</image:caption></image:image>
+    <image:image><image:loc>https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/screenshots/05-main-menu.jpg</image:loc><image:caption>The GemGame main menu</image:caption></image:image>
+    <image:image><image:loc>https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/screenshots/06-pre-game.jpg</image:loc><image:caption>A GemGame pre-game goals screen</image:caption></image:image>
+    <image:image><image:loc>https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/screenshots/07-settings.jpg</image:loc><image:caption>GemGame settings with Game Center</image:caption></image:image>
   </url>
   <url>
     <loc>https://georgepwall1991.github.io/fleet-commander-site/gemgame/faq/</loc>
