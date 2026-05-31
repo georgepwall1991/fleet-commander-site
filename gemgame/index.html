@@ -10,6 +10,7 @@
   <meta name="apple-itunes-app" content="app-id=6761720994">
 
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
   <meta property="og:site_name" content="GemGame">
   <meta property="og:title" content="GemGame: Match 3 Puzzle &mdash; Cozy Garden Match 3 for iPhone">
   <meta property="og:description" content="A cozy, handcrafted match 3 puzzle for iPhone. Chain cascade combos and restore a starlit garden. No ads, no energy waits, no forced timers. Free to download with optional in-app purchases.">
@@ -114,6 +115,9 @@
       background: #0b0a1a;
     }
     @media (max-width: 720px) { .shots img { width: 180px; } }
+    .shots picture{flex:0 0 auto;width:220px;display:block;scroll-snap-align:start}
+    .shots picture img{width:100%;height:auto;border-radius:18px;border:1px solid var(--panel-border);box-shadow:var(--shadow);background:#0b0a1a;display:block}
+    @media (max-width:720px){.shots picture{width:180px}}
   </style>
   <link rel="icon" href="./assets/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32.png">
@@ -169,13 +173,13 @@
         <p>A look at the board, the garden you restore, and the level map &mdash; straight from the App Store.</p>
       </div>
       <section class="shots" aria-label="GemGame screenshots">
-        <img src="./assets/screenshots/01-gameplay.jpg" width="600" height="1300" loading="lazy" alt="GemGame gameplay — match gems and trigger cascade combos on the neon Galactic Casino board">
-        <img src="./assets/screenshots/02-garden.jpg" width="600" height="1300" loading="lazy" alt="Restore a starlit celestial garden in GemGame by spending the stars you earn">
-        <img src="./assets/screenshots/03-level-map.jpg" width="600" height="1300" loading="lazy" alt="The GemGame level map across handcrafted match 3 levels">
-        <img src="./assets/screenshots/04-shop.jpg" width="600" height="1300" loading="lazy" alt="The GemGame booster and coin shop">
-        <img src="./assets/screenshots/05-main-menu.jpg" width="600" height="1300" loading="lazy" alt="The GemGame main menu">
-        <img src="./assets/screenshots/06-pre-game.jpg" width="600" height="1300" loading="lazy" alt="A GemGame pre-game screen showing the level goals">
-        <img src="./assets/screenshots/07-settings.jpg" width="600" height="1300" loading="lazy" alt="GemGame settings, including Game Center">
+        <picture><source type="image/webp" srcset="./assets/screenshots/01-gameplay.webp"><img src="./assets/screenshots/01-gameplay.jpg" width="600" height="1300" loading="lazy" alt="GemGame gameplay — match gems and trigger cascade combos on the neon Galactic Casino board"></picture>
+        <picture><source type="image/webp" srcset="./assets/screenshots/02-garden.webp"><img src="./assets/screenshots/02-garden.jpg" width="600" height="1300" loading="lazy" alt="Restore a starlit celestial garden in GemGame by spending the stars you earn"></picture>
+        <picture><source type="image/webp" srcset="./assets/screenshots/03-level-map.webp"><img src="./assets/screenshots/03-level-map.jpg" width="600" height="1300" loading="lazy" alt="The GemGame level map across handcrafted match 3 levels"></picture>
+        <picture><source type="image/webp" srcset="./assets/screenshots/04-shop.webp"><img src="./assets/screenshots/04-shop.jpg" width="600" height="1300" loading="lazy" alt="The GemGame booster and coin shop"></picture>
+        <picture><source type="image/webp" srcset="./assets/screenshots/05-main-menu.webp"><img src="./assets/screenshots/05-main-menu.jpg" width="600" height="1300" loading="lazy" alt="The GemGame main menu"></picture>
+        <picture><source type="image/webp" srcset="./assets/screenshots/06-pre-game.webp"><img src="./assets/screenshots/06-pre-game.jpg" width="600" height="1300" loading="lazy" alt="A GemGame pre-game screen showing the level goals"></picture>
+        <picture><source type="image/webp" srcset="./assets/screenshots/07-settings.webp"><img src="./assets/screenshots/07-settings.jpg" width="600" height="1300" loading="lazy" alt="GemGame settings, including Game Center"></picture>
       </section>
 
       <div class="section-head">
