@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GemGame Leaderboards &amp; Game Center Achievements Guide</title>
+<meta name="description" content="How GemGame uses Apple Game Center: three leaderboards for total stars, highest level and best score, six achievements, and tips to climb them. Optional.">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<link rel="canonical" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/game-center/">
+<meta name="apple-itunes-app" content="app-id=6761720994">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="GemGame">
+<meta property="og:title" content="GemGame Leaderboards &amp; Game Center Achievements Guide">
+<meta property="og:description" content="How GemGame uses Apple Game Center: three leaderboards for total stars, highest level and best score, six achievements, and tips to climb them. Optional.">
+<meta property="og:url" content="https://georgepwall1991.github.io/fleet-commander-site/gemgame/game-center/">
+<meta property="og:image" content="https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GemGame Leaderboards &amp; Game Center Achievements Guide">
+<meta name="twitter:description" content="How GemGame uses Apple Game Center: three leaderboards for total stars, highest level and best score, six achievements, and tips to climb them. Optional.">
+<meta name="twitter:image" content="https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/og-image.png">
+<link rel="stylesheet" href="../assets/site.css">
+<link rel="icon" href="../assets/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<meta name="theme-color" content="#fff9f1">
+<style>
+.gc-list { margin: 0; padding-left: 1.1rem; }
+.gc-list li { margin-bottom: 0.5rem; }
+.gc-num { display: inline-flex; align-items: center; justify-content: center; min-width: 1.9rem; height: 1.9rem; border-radius: 999px; background: rgba(120, 86, 200, 0.14); font-weight: 700; margin-right: 0.55rem; }
+.gc-card-head { display: flex; align-items: center; margin-bottom: 0.4rem; }
+.gc-card-head h3 { margin: 0; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "inLanguage": "en",
+  "headline": "GemGame Leaderboards & Game Center Achievements Guide",
+  "description": "How GemGame uses Apple Game Center: three leaderboards for total stars, highest level and best score, six achievements, and tips to climb them. Game Center is optional.",
+  "author": { "@type": "Person", "name": "George Wall" },
+  "publisher": { "@type": "Organization", "name": "GemGame" },
+  "mainEntityOfPage": "https://georgepwall1991.github.io/fleet-commander-site/gemgame/game-center/",
+  "image": "https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/og-image.png"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "inLanguage": "en",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://georgepwall1991.github.io/fleet-commander-site/gemgame/" },
+    { "@type": "ListItem", "position": 2, "name": "Game Center", "item": "https://georgepwall1991.github.io/fleet-commander-site/gemgame/game-center/" }
+  ]
+}
+</script>
+</head>
+<body>
+<div class="shell">
+  <header class="site-header">
+    <a class="brand" href="../">
+      <span class="brand-mark" aria-hidden="true">&#9670;</span>
+      GemGame
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="../">Home</a>
+      <a href="../guide/">Guide</a>
+      <a href="../tips/">Tips</a>
+      <a href="../faq/">FAQ</a>
+      <a href="../support/">Support</a>
+    </nav>
+  </header>
+
+  <main>
+    <nav class="eyebrow" aria-label="Breadcrumb"><a href="../">Home</a> &rsaquo; <span aria-current="page">Game Center</span></nav>
+
+    <section class="hero">
+      <p class="eyebrow">Apple Game Center</p>
+      <div class="hero-copy">
+        <h1>GemGame leaderboards and Game Center achievements</h1>
+        <p>GemGame plugs into Apple Game Center so you can chase three leaderboards and six achievements as you work through the match-3 levels and restore the celestial garden. It is completely optional, sits quietly in the background, and never gets in the way of a relaxed run.</p>
+      </div>
+      <div class="button-row">
+        <a class="button button-primary" href="https://apps.apple.com/app/id6761720994">Download GemGame on the App Store</a>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>The three leaderboards</h2>
+        <p>Each leaderboard tracks a different way to be good at GemGame, so a careful star-hunter and an aggressive score-chaser can both top a chart that suits their style.</p>
+      </div>
+      <div class="grid three">
+        <article class="card">
+          <div class="gc-card-head"><h3>Total stars</h3></div>
+          <p>Every level awards one to three stars depending on how far past the target score you finish. This board adds up all the stars you have ever earned across the whole map, so it rewards steady, thorough play. Replaying earlier levels to upgrade a one-star clear into three stars is one of the most reliable ways to climb.</p>
+        </article>
+        <article class="card">
+          <div class="gc-card-head"><h3>Highest level</h3></div>
+          <p>This board records the furthest level you have reached. It is a pure measure of progress through the campaign, so simply keep advancing to move up. Lives refill over time and there are no forced timers, so you can push deeper whenever you have a few free minutes.</p>
+        </article>
+        <article class="card">
+          <div class="gc-card-head"><h3>Best score</h3></div>
+          <p>Your single highest score in any one level lands here. Big numbers come from long cascades, well-placed specials, and combining two specials together. Hunt for a level you know well and set up chain reactions to send this figure soaring.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>The six achievements</h2>
+        <p>Achievements are milestone badges that unlock as you play. There are six to collect, and most arrive naturally as you progress, restore garden districts, and master the match-3 board.</p>
+      </div>
+      <div class="card">
+        <ol class="gc-list">
+          <li>Reaching milestone levels as you advance through the campaign map.</li>
+          <li>Banking stars and watching your total climb across many runs.</li>
+          <li>Creating powerful special gems &mdash; striped, wrapped, and the colour bomb from a match of five.</li>
+          <li>Triggering big combinations, including pairing two specials together for the strongest clears.</li>
+          <li>Restoring celestial districts in the garden, from the Starlight Promenade to Moonpetal Square.</li>
+          <li>Building long cascades and high-scoring single levels.</li>
+        </ol>
+        <p class="notice">Achievements unlock once and stay earned. You can review your progress any time from the Game Center access point inside GemGame or in the Game Center area of your device settings.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>How competitive players climb</h2>
+        <p>If you enjoy the chase, a few habits move you up the boards faster without changing the cozy pace of the game.</p>
+      </div>
+      <div class="grid two">
+        <article class="card">
+          <h3>Three-star everything</h3>
+          <p>The total-stars leaderboard rewards completeness, not speed. Go back to any level you cleared with one or two stars and replay it with a plan: save your specials, chase the move-efficient matches, and aim well past the target score. Each upgrade adds directly to your total.</p>
+        </article>
+        <article class="card">
+          <h3>Engineer your specials</h3>
+          <p>For best score, set up the board before you swap. A match of four makes a striped gem, an L or T shape makes a wrapped gem, and a match of five makes a colour bomb. Saving these for a single explosive turn, then combining two together, produces the cascades that push your best score to the top.</p>
+        </article>
+        <article class="card">
+          <h3>Lean on the garden perks</h3>
+          <p>Spending stars to restore districts unlocks perks that boost your puzzle runs. Stronger runs mean higher scores and more stars, which feeds straight back into the leaderboards &mdash; so progress in the garden and progress on the boards reinforce each other.</p>
+        </article>
+        <article class="card">
+          <h3>Play your strengths</h3>
+          <p>Use boosters such as the Hammer, Shuffle, and Extra Moves, plus the on-demand Hint, to rescue a tricky board and lock in a clean clear. There is no pressure to compete &mdash; but if you want the top spot, every saved run is a star or a score that counts.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>Game Center is always optional</h2>
+      </div>
+      <div class="card">
+        <p>GemGame is a relaxed, handcrafted match-3 game first. Game Center support is there for players who enjoy a friendly chase, but it is entirely optional. If you would rather just match gems and tend the garden, you can ignore the leaderboards and achievements completely &mdash; there are no ads, no forced timers, and no energy waits to interrupt you, and the game plays fully offline. Whether or not you sign in to Game Center, every level, perk, and feature is exactly the same.</p>
+        <div class="button-row">
+          <a class="button button-primary" href="https://apps.apple.com/app/id6761720994">Get GemGame on the App Store</a>
+        </div>
+        <p>Want to climb faster? Keep reading:</p>
+        <div class="button-row">
+          <a class="button button-secondary" href="../guide/">Read the full guide</a>
+          <a class="button button-secondary" href="../tips/">Scoring &amp; cascade tips</a>
+          <a class="button button-secondary" href="../faq/">Game Center FAQ</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <nav aria-label="Footer">
+      <a href="../">Home</a>
+      <a href="../privacy/">Privacy</a>
+      <a href="../support/">Support</a>
+      <a href="../terms/">Terms</a>
+    </nav>
+    <p>GemGame &mdash; a cozy match-3 puzzle by George Wall.</p>
+  </footer>
+</div>
+</body>
+</html>
