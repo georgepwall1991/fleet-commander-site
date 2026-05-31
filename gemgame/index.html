@@ -34,6 +34,15 @@
   <meta name="twitter:image" content="https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/og-image.png">
   <meta name="twitter:image:alt" content="GemGame: Match 3 Puzzle — cozy match 3 with a starlit garden, free on iPhone">
 
+  <meta property="og:video" content="https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/video/promo-wide.mp4">
+  <meta property="og:video:secure_url" content="https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/video/promo-wide.mp4">
+  <meta property="og:video:type" content="video/mp4">
+  <meta property="og:video:width" content="1920">
+  <meta property="og:video:height" content="1080">
+  <meta name="twitter:player" content="https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/video/promo-wide.mp4">
+  <meta name="twitter:player:width" content="1920">
+  <meta name="twitter:player:height" content="1080">
+
   <link rel="stylesheet" href="./assets/site.css">
 
   <style>
@@ -202,6 +211,25 @@
           <span>Free to download</span>
         </div>
       </section>
+
+      <style>
+        .promo-video-wrap{display:flex;justify-content:center;margin:34px 0 8px}
+        .promo-video{width:100%;max-width:420px;height:auto;display:block;border-radius:22px;
+          border:1px solid var(--hair-strong);box-shadow:var(--shadow);background:#0b0a1a}
+        @media (max-width:520px){.promo-video{max-width:320px}}
+      </style>
+      <div class="section-head">
+        <h2>Watch GemGame in motion</h2>
+        <p>Twenty seconds of cascades, garden-growing, and the neon Galactic Casino look.</p>
+      </div>
+      <div class="promo-video-wrap">
+        <video class="promo-video" autoplay muted loop playsinline preload="metadata"
+               poster="./assets/video/poster.jpg" aria-label="GemGame gameplay promo video">
+          <source src="./assets/video/promo-square.mp4" type="video/mp4">
+          Your browser doesn&rsquo;t support embedded video.
+          <a href="./assets/video/promo-square.mp4">Watch the GemGame promo</a>.
+        </video>
+      </div>
 
       <div class="section-head">
         <h2>Screenshots</h2>
