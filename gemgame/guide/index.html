@@ -42,6 +42,16 @@
     ol.steps li { margin: 0 0 10px; }
     ol.steps strong { color: var(--text); }
     .lead { font-size: 1.04rem; }
+    .byline { color: var(--muted); font-size: .9rem; margin: 2px 0 14px; }
+    .byline strong { color: var(--text); }
+    figure.shot { margin: 18px 0; }
+    figure.shot picture, figure.shot img { display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid rgba(255,255,255,.09); }
+    figure.shot figcaption { color: var(--muted); font-size: .85rem; margin-top: 8px; }
+    .faq-q { margin: 18px 0 4px; font-size: 1.06rem; color: var(--text); }
+    .faq-a { margin: 0; color: var(--muted); }
+    @media (min-width: 720px) {
+      figure.shot.right { float: right; width: 232px; margin: 4px 0 14px 24px; }
+    }
     @media (max-width: 560px) { .toc { columns: 1; } }
   </style>
   <link rel="stylesheet" href="../assets/site.css">
@@ -53,51 +63,38 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "HowTo",
-    "name": "How to play GemGame and clear your first match 3 level",
-    "description": "A beginner walkthrough of the GemGame match 3 swap loop: swap adjacent gems to make matches of three or more, hit the level goal, and earn up to three stars.",
+    "@type": "Article",
+    "inLanguage": "en",
+    "headline": "How to Play GemGame: Match 3 Basics & Full Guide",
+    "description": "A complete how to play GemGame guide: the match 3 swap loop, level goals, striped, wrapped and rainbow special gems, cascade combos, stars, lives, coins and the garden.",
     "url": "https://georgepwall1991.github.io/fleet-commander-site/gemgame/guide/",
-    "totalTime": "PT5M",
-    "tool": [
-      { "@type": "HowToTool", "name": "GemGame on iPhone" }
-    ],
-    "step": [
-      {
-        "@type": "HowToStep",
-        "position": 1,
-        "name": "Read the level goal",
-        "text": "Open a level and check the goal panel at the top. A level asks for one of three things: reach a score, collect a number of a colour, or clear obstacles like ice. Note your move count too.",
-        "url": "https://georgepwall1991.github.io/fleet-commander-site/gemgame/guide/#goals"
-      },
-      {
-        "@type": "HowToStep",
-        "position": 2,
-        "name": "Swap two adjacent gems to make a match",
-        "text": "Drag or tap-swap two side-by-side gems so that three or more of the same colour line up in a row or column. The matched gems clear and gems above fall to fill the gaps.",
-        "url": "https://georgepwall1991.github.io/fleet-commander-site/gemgame/guide/#loop"
-      },
-      {
-        "@type": "HowToStep",
-        "position": 3,
-        "name": "Aim for fours and fives to build special gems",
-        "text": "Match four in a line to create a striped gem, an L or T shape to create a wrapped gem, and five in a line to create a rainbow colour bomb. Specials clear far more of the board.",
-        "url": "https://georgepwall1991.github.io/fleet-commander-site/gemgame/guide/#specials"
-      },
-      {
-        "@type": "HowToStep",
-        "position": 4,
-        "name": "Trigger cascades and combine specials",
-        "text": "Let falling gems form new matches for free cascade combos. Swap two special gems next to each other to combine them for an even bigger board-clearing effect.",
-        "url": "https://georgepwall1991.github.io/fleet-commander-site/gemgame/guide/#cascades"
-      },
-      {
-        "@type": "HowToStep",
-        "position": 5,
-        "name": "Finish the goal and earn stars",
-        "text": "Complete the goal within your move limit to clear the level and earn one to three stars based on how well you did. Spend those stars to restore your celestial garden.",
-        "url": "https://georgepwall1991.github.io/fleet-commander-site/gemgame/guide/#stars"
+    "image": "https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/og/guide.png",
+    "datePublished": "2026-04-07",
+    "dateModified": "2026-05-31",
+    "author": {
+      "@type": "Person",
+      "name": "George Wall",
+      "jobTitle": "Indie game developer",
+      "url": "https://georgepwall1991.github.io/fleet-commander-site/gemgame/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "GemGame",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/apple-touch-icon.png"
       }
-    ]
+    },
+    "mainEntityOfPage": "https://georgepwall1991.github.io/fleet-commander-site/gemgame/guide/",
+    "about": {
+      "@type": "VideoGame",
+      "name": "GemGame: Match 3 Puzzle",
+      "alternateName": "GemGame",
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "iOS",
+      "url": "https://georgepwall1991.github.io/fleet-commander-site/gemgame/",
+      "sameAs": "https://apps.apple.com/app/id6761720994"
+    }
   }
   </script>
   <script type="application/ld+json">
@@ -116,6 +113,47 @@
         "position": 2,
         "name": "Guide",
         "item": "https://georgepwall1991.github.io/fleet-commander-site/gemgame/guide/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "en",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do you make a rainbow gem in GemGame?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Match five gems of the same colour in a straight line (a row or a column) to create a rainbow gem, also called a colour bomb. Swap it with any ordinary gem and it instantly removes every gem of that colour from the whole board."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What do stars do in GemGame?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You earn one to three stars for clearing each level, based on how decisively you hit the goal. Stars are spent restoring celestial garden districts, and restored areas grant perks that boost your future puzzle runs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there a timer in GemGame?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Levels are scored by moves, not time, so there is no countdown clock during a level. You can take as long as you like to read the board and plan each swap."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you get more lives in GemGame?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Lives refill automatically over time. If you run out, you can wait for them to recharge or keep playing levels you have already cleared, which do not cost a life. There is no forced purchase to keep playing."
+        }
       }
     ]
   }
@@ -143,6 +181,7 @@
       <section class="hero">
         <div class="eyebrow">How to Play</div>
         <h1>How to Play GemGame</h1>
+        <p class="byline">By <strong>George Wall</strong>, GemGame&rsquo;s developer &middot; <time datetime="2026-05-31">Updated 31 May 2026</time> &middot; 6 min read</p>
         <p class="hero-copy lead">
           New to match 3, or just new to GemGame? This guide covers everything from the basic
           swap-and-match loop to building striped, wrapped, and rainbow special gems, chaining
@@ -171,6 +210,13 @@
 
       <section class="card" aria-labelledby="loop">
         <h2 id="loop">The core match 3 swap loop</h2>
+        <figure class="shot right">
+          <picture>
+            <source srcset="../assets/screenshots/01-gameplay.webp" type="image/webp">
+            <img src="../assets/screenshots/01-gameplay.jpg" width="600" height="1300" alt="Swapping two adjacent gems to line up a match of three on the GemGame match 3 board" loading="lazy" decoding="async">
+          </picture>
+          <figcaption>The match 3 board: swap two side-by-side gems to line up three or more.</figcaption>
+        </figure>
         <p>
           GemGame is built on a board of six base gem types. Your one fundamental move is the
           <strong>swap</strong>: drag a gem onto an adjacent gem, or tap one then the other, to
@@ -225,9 +271,9 @@
       <section class="card" aria-labelledby="specials">
         <h2 id="specials">Special gems and how to make them</h2>
         <p>
-          Matching exactly three is fine, but matching <em>more</em> than three forges a special gem
-          that stays on the board until you set it off. Specials are the heart of high scores and
-          tough-level clears.
+          Matching exactly three is fine, but matching <em>more</em> than three forges a
+          <a href="../glossary/">special gem</a> that stays on the board until you set it off. Specials
+          are the heart of high scores and tough-level clears.
         </p>
         <div class="grid three" aria-label="Special gem types">
           <div class="card">
@@ -283,10 +329,17 @@
 
       <section class="card" aria-labelledby="stars">
         <h2 id="stars">Stars and restoring the garden</h2>
+        <figure class="shot right">
+          <picture>
+            <source srcset="../assets/screenshots/02-garden.webp" type="image/webp">
+            <img src="../assets/screenshots/02-garden.jpg" width="600" height="1300" alt="Spending earned stars to restore a celestial garden district in GemGame" loading="lazy" decoding="async">
+          </picture>
+          <figcaption>Spend stars to rebuild celestial garden districts and unlock perks.</figcaption>
+        </figure>
         <p>
           Finish a level and you earn a rating of <strong>one to three stars</strong> based on how
           decisively you cleared the goal. Stars are the bridge between the puzzle layer and
-          GemGame's meta-layer: a starlit celestial garden waiting to be restored.
+          GemGame's meta-layer: a starlit <a href="../garden/">celestial garden</a> waiting to be restored.
         </p>
         <p>
           Spend the stars you bank to rebuild districts such as the Starlight Promenade and Moonpetal
@@ -298,6 +351,13 @@
 
       <section class="card" aria-labelledby="lives">
         <h2 id="lives">Lives, coins, and the booster shop</h2>
+        <figure class="shot right">
+          <picture>
+            <source srcset="../assets/screenshots/04-shop.webp" type="image/webp">
+            <img src="../assets/screenshots/04-shop.jpg" width="600" height="1300" alt="The GemGame booster shop showing hint, hammer, shuffle and extra moves power-ups" loading="lazy" decoding="async">
+          </picture>
+          <figcaption>The booster shop: spend coins on hint, hammer, shuffle and extra moves.</figcaption>
+        </figure>
         <p>
           GemGame plays at your pace. There is no countdown clock during a level, because levels
           are scored by moves, not time. A friendly <strong>lives</strong> system gives you attempts that
@@ -358,6 +418,18 @@
           guide</a>, browse quick answers in the <a href="../faq/">FAQ</a>, or check the
           <a href="../updates/">latest updates</a> for what is new.
         </p>
+      </section>
+
+      <section class="card" aria-labelledby="faq">
+        <h2 id="faq">Common questions</h2>
+        <h3 class="faq-q">How do you make a rainbow gem in GemGame?</h3>
+        <p class="faq-a">Match five gems of the same colour in a straight line (a row or a column) to create a rainbow gem, also called a colour bomb. Swap it with any ordinary gem and it instantly removes every gem of that colour from the whole board.</p>
+        <h3 class="faq-q">What do stars do in GemGame?</h3>
+        <p class="faq-a">You earn one to three stars for clearing each level, based on how decisively you hit the goal. Stars are spent restoring celestial garden districts, and restored areas grant perks that boost your future puzzle runs.</p>
+        <h3 class="faq-q">Is there a timer in GemGame?</h3>
+        <p class="faq-a">No. Levels are scored by moves, not time, so there is no countdown clock during a level. You can take as long as you like to read the board and plan each swap.</p>
+        <h3 class="faq-q">How do you get more lives in GemGame?</h3>
+        <p class="faq-a">Lives refill automatically over time. If you run out, you can wait for them to recharge or keep playing levels you have already cleared, which do not cost a life. There is no forced purchase to keep playing.</p>
       </section>
 
       <section class="card notice">
