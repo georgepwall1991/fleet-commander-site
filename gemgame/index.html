@@ -48,7 +48,7 @@
       align-items: center;
       padding: 5px 12px;
       border-radius: 999px;
-      background: rgba(255, 255, 255, 0.7);
+      background: var(--panel-2);
       border: 1px solid var(--panel-border);
       color: var(--accent-strong);
       font-size: 0.82rem;
@@ -131,7 +131,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16.png">
   <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
   <link rel="manifest" href="./site.webmanifest">
-  <meta name="theme-color" content="#fff9f1">
+  <meta name="theme-color" content="#0a0820">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -525,6 +525,24 @@
     }
   ]
 }
+  </script>
+  <script>
+    /* Scroll-reveal: additive + bulletproof. Above-fold content is never hidden,
+       and a failsafe guarantees everything is visible within 1.6s no matter what. */
+    (function(){
+      var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reduce || !('IntersectionObserver' in window)) return;
+      var vh = window.innerHeight || 800;
+      var els = [].slice.call(document.querySelectorAll('.section-head, .grid, .shots, .notice'))
+        .filter(function(el){ return el.getBoundingClientRect().top > vh * 0.9; });
+      function reveal(el){ el.classList.add('in'); }
+      els.forEach(function(el){ el.classList.add('reveal'); });
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){ if(e.isIntersecting){ reveal(e.target); io.unobserve(e.target); } });
+      }, {rootMargin:'0px 0px -6% 0px', threshold:0.06});
+      els.forEach(function(el){ io.observe(el); });
+      setTimeout(function(){ els.forEach(reveal); }, 1600);
+    })();
   </script>
 </body>
 </html>
