@@ -170,6 +170,12 @@ p { margin: 0 0 16px; color: var(--muted); }
 }
 .button-secondary:hover { border-color: rgba(111,224,255,.5); box-shadow: 0 0 0 1px rgba(111,224,255,.25); }
 
+/* official App Store badge (white variant for dark bg) */
+.appstore-badge { display: inline-flex; align-items: center; }
+.appstore-badge img { height: 52px; width: auto; display: block; transition: transform .18s ease, filter .25s ease; }
+.appstore-badge:hover img { transform: translateY(-2px); filter: drop-shadow(0 12px 26px rgba(70,232,255,.30)); }
+.appstore-badge:focus-visible { outline: 2px solid var(--accent-strong); outline-offset: 3px; border-radius: 10px; }
+
 /* hero badges (landing "at a glance") */
 .hero-badges { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
 .hero-badges span {
