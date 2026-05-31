@@ -1,7 +1,7 @@
 {
   "name": "GemGame: Match 3 Puzzle",
   "short_name": "GemGame",
-  "description": "A cozy, handcrafted match 3 puzzle for iPhone with a starlit garden to restore. No ads, no energy waits.",
+  "description": "A cozy, handcrafted match 3 puzzle for iPhone with a starlit garden to restore. No ads, no pay-to-win.",
   "start_url": "./",
   "display": "browser",
   "background_color": "#fff9f1",
