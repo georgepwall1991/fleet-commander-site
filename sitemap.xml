@@ -620,4 +620,24 @@
     <lastmod>2026-05-31</lastmod>
     <changefreq>monthly</changefreq>
   </url>
+  <url>
+    <loc>https://georgepwall1991.github.io/fleet-commander-site/gemgame/el/game-center/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://georgepwall1991.github.io/fleet-commander-site/gemgame/fi/game-center/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://georgepwall1991.github.io/fleet-commander-site/gemgame/el/celestial-pass/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://georgepwall1991.github.io/fleet-commander-site/gemgame/fi/celestial-pass/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
 </urlset>
