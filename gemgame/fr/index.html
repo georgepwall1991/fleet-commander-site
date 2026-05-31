@@ -38,7 +38,11 @@
 .shots picture{flex:0 0 auto;width:220px;display:block;scroll-snap-align:start}
 .shots picture img{width:100%;height:auto;border-radius:18px;border:1px solid var(--panel-border);box-shadow:var(--shadow);background:#0b0a1a;display:block}
 @media (max-width:720px){.shots picture{width:180px}}
-</style>
+
+    .section-head{margin-top:38px}
+    .section-head p{max-width:720px}
+    .grid.three{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+  </style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -189,7 +193,31 @@
   </section>
 </main>
 
-<footer class="site-footer">
+
+      <!-- cluster-injected -->
+      <div class="section-head">
+  <h2>Apprendre et mieux jouer</h2>
+  <p>Plongez plus loin dans GemGame et progressez à chaque partie.</p>
+</div>
+<section class="grid three" aria-label="Guides">
+  <article class="card">
+    <h3>Comment jouer</h3>
+    <p>Découvrez les bases du match-3 et le fonctionnement des gemmes spéciales.</p>
+    <a href="./guide/">Lire le guide</a>
+  </article>
+  <article class="card">
+    <h3>Astuces et stratégie</h3>
+    <p>Anticipez les cascades, gardez vos gemmes spéciales et faites grandir votre jardin.</p>
+    <a href="./tips/">Voir les astuces</a>
+  </article>
+  <article class="card">
+    <h3>FAQ</h3>
+    <p>Des réponses rapides : gratuit ? avec des pubs ? jouable hors ligne ?</p>
+    <a href="./faq/">Lire la FAQ</a>
+  </article>
+</section>
+
+    <footer class="site-footer">
   <nav aria-label="Liens du pied de page">
     <a href="./">Accueil</a>
     <a href="../privacy/">Confidentialité</a>

@@ -45,6 +45,10 @@
     .badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px;padding:0;list-style:none}
     .badge{display:inline-flex;align-items:center;padding:5px 12px;border-radius:999px;background:rgba(255,255,255,.7);border:1px solid var(--panel-border);color:var(--accent-strong);font-size:.82rem;font-weight:700}
     .store-model{margin-top:28px}
+  
+    .section-head{margin-top:38px}
+    .section-head p{max-width:720px}
+    .grid.three{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
   </style>
 <script type="application/ld+json">
 {
@@ -174,7 +178,31 @@
   </section>
 </main>
 
-<footer class="site-footer">
+
+      <!-- cluster-injected -->
+      <div class="section-head">
+  <h2>Μάθε και παίξε καλύτερα</h2>
+  <p>Εξερεύνησε τους οδηγούς μας και ανέβασε το παιχνίδι σου στο GemGame.</p>
+</div>
+<section class="grid three" aria-label="Οδηγοί">
+  <article class="card">
+    <h3>Πώς να παίξεις</h3>
+    <p>Τα βασικά του ταιριάσματος τριών και πώς δουλεύουν τα ειδικά πετράδια.</p>
+    <a href="./guide/">Διάβασε τον οδηγό</a>
+  </article>
+  <article class="card">
+    <h3>Συμβουλές και στρατηγική</h3>
+    <p>Σχεδίασε αλυσιδωτές κινήσεις, φύλαξε τα ειδικά πετράδια και μεγάλωσε τον κήπο σου.</p>
+    <a href="./tips/">Δες τις συμβουλές</a>
+  </article>
+  <article class="card">
+    <h3>Συχνές ερωτήσεις</h3>
+    <p>Γρήγορες απαντήσεις: είναι δωρεάν; έχει διαφημίσεις; παίζεται εκτός σύνδεσης;</p>
+    <a href="./faq/">Διάβασε τις συχνές ερωτήσεις</a>
+  </article>
+</section>
+
+    <footer class="site-footer">
   <nav aria-label="Υποσέλιδο">
     <a href="./">Αρχική</a>
     <a href="../privacy/">Απόρρητο</a>
