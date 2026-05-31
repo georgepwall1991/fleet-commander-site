@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Näin pelaat GemGamea — match-3-pulmaopas aloittelijoille</title>
+<meta name="description" content="Täydellinen GemGame-pelaaminen opas suomeksi: vaihda timantteja, tee erikoisia, ketjuta cascadeja, kerää tähtiä ja avaa puutarhakaupunginosia. Aloita tästä.">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<link rel="canonical" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/fi/guide/">
+<meta name="apple-itunes-app" content="app-id=6761720994">
+<link rel="alternate" hreflang="en" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/guide/">
+<link rel="alternate" hreflang="fr" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/fr/guide/">
+<link rel="alternate" hreflang="de" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/de/guide/">
+<link rel="alternate" hreflang="it" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/it/guide/">
+<link rel="alternate" hreflang="el" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/el/guide/">
+<link rel="alternate" hreflang="fi" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/fi/guide/">
+<link rel="alternate" hreflang="x-default" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/guide/">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="fi_FI">
+<meta property="og:site_name" content="GemGame">
+<meta property="og:title" content="Näin pelaat GemGamea — match-3-pulmaopas">
+<meta property="og:description" content="Opas suomeksi: vaihda timantteja, tee erikoisia, ketjuta cascadeja, kerää tähtiä ja avaa puutarhakaupunginosia GemGamessa.">
+<meta property="og:url" content="https://georgepwall1991.github.io/fleet-commander-site/gemgame/fi/guide/">
+<meta property="og:image" content="https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/og/guide.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Näin pelaat GemGamea — match-3-pulmaopas">
+<meta name="twitter:description" content="Opas suomeksi: vaihda timantteja, tee erikoisia, ketjuta cascadeja, kerää tähtiä ja avaa puutarhakaupunginosia GemGamessa.">
+<meta name="twitter:image" content="https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/og/guide.png">
+<link rel="stylesheet" href="../../assets/site.css">
+<link rel="icon" href="../../assets/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="manifest" href="../../site.webmanifest">
+<meta name="theme-color" content="#fff9f1">
+<style>
+.guide-steps { counter-reset: step; list-style: none; padding-left: 0; margin: 0; }
+.guide-steps > li { counter-increment: step; position: relative; padding-left: 2.6rem; margin-bottom: 1rem; }
+.guide-steps > li::before { content: counter(step); position: absolute; left: 0; top: 0; width: 1.8rem; height: 1.8rem; border-radius: 50%; background: #6a5acd; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.95rem; }
+.lead { font-size: 1.08rem; line-height: 1.6; }
+.special-name { font-weight: 700; color: #6a5acd; }
+.toc { margin: 0; padding-left: 1.1rem; line-height: 1.7; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "inLanguage": "fi",
+  "name": "Näin pelaat GemGamea",
+  "description": "Vaihe vaiheelta -opas GemGamen pelaamiseen: timanttien vaihtaminen, erikoispalat, cascade-ketjut, tähdet ja puutarhakaupunginosat.",
+  "image": "https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/og/guide.png",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Vaihda ja yhdistä",
+      "text": "Vaihda kaksi vierekkäistä timanttia keskenään muodostaaksesi vähintään kolmen samanvärisen rivin tai sarakkeen. Yhdistyneet palat häviävät ja yläpuolella olevat putoavat alas.",
+      "url": "https://georgepwall1991.github.io/fleet-commander-site/gemgame/fi/guide/#perusta"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Täytä kentän tavoite",
+      "text": "Jokaisella kentällä on tavoite — kerää pisteet, kerää tietty väri tai puhdista jää ja esteet — annetun siirtorajan sisällä. Onnistumisesta saa 1–3 tähteä.",
+      "url": "https://georgepwall1991.github.io/fleet-commander-site/gemgame/fi/guide/#tavoitteet"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Tee ja käytä erikoispaloja",
+      "text": "Yhdistä neljä saadaksesi raidallisen palan, L- tai T-muoto luo käärityn palan ja viiden suora antaa sateenkaaripalan. Yhdistä kaksi erikoista yhteen suurinta vaikutusta varten.",
+      "url": "https://georgepwall1991.github.io/fleet-commander-site/gemgame/fi/guide/#erikoiset"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Ketjuta cascadet ja kerää tähdet",
+      "text": "Anna putoavien palojen muodostaa lisää yhdistelmiä peräkkäin cascade-comboja varten. Ansaitut tähdet entisöivät puutarhakaupunginosia, jotka antavat etuja.",
+      "url": "https://georgepwall1991.github.io/fleet-commander-site/gemgame/fi/guide/#cascadet"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Etusivu",
+      "item": "https://georgepwall1991.github.io/fleet-commander-site/gemgame/fi/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Opas",
+      "item": "https://georgepwall1991.github.io/fleet-commander-site/gemgame/fi/guide/"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<div class="shell">
+  <header class="site-header">
+    <a class="brand" href="../">
+      <span class="brand-mark">GemGame</span>
+    </a>
+    <nav class="nav">
+      <a href="../">Etusivu</a>
+      <a href="./" aria-current="page">Opas</a>
+      <a href="../tips/">Vinkit</a>
+      <a href="../faq/">UKK</a>
+      <a href="../../support/">Tuki</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Pelaajan opas</p>
+      <div class="hero-copy">
+        <h1>Näin pelaat GemGamea</h1>
+        <p class="lead">GemGame on lämminhenkinen, käsin tehty match-3-pulmapeli iPhonelle. Vaihda timantteja, anna yhdistelmien ketjuttua ja entisöi tähtitaivaan puutarha — kaikki ilman mainoksia, pakkoajastimia tai energiaodotuksia. Tämä opas käy läpi kaiken aivan alusta erikoispalojen yhdistämiseen asti.</p>
+      </div>
+      <div class="button-row">
+        <a class="button button-primary" href="https://apps.apple.com/app/id6761720994">Lataa App Storesta</a>
+        <a class="button button-secondary" href="../tips/">Lue lisävinkit</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-head">
+        <h2>Mitä tämä opas kattaa</h2>
+      </div>
+      <ul class="toc">
+        <li><a href="#perusta">Vaihda ja yhdistä — peruskierre</a></li>
+        <li><a href="#tavoitteet">Kolme tavoitetyyppiä ja siirtoraja</a></li>
+        <li><a href="#erikoiset">Erikoispalat ja niiden yhdistäminen</a></li>
+        <li><a href="#cascadet">Cascadet ja ketjucombot</a></li>
+        <li><a href="#tahdet">Tähdet ja puutarhakaupunginosat</a></li>
+        <li><a href="#resurssit">Elämät, kolikot, boosterit ja Vihje</a></li>
+        <li><a href="#sisalto">Päivittäiset palkinnot, tehtävät ja Celestial Pass</a></li>
+      </ul>
+    </section>
+
+    <section class="card" id="perusta">
+      <div class="section-head">
+        <h2>Vaihda ja yhdistä — peruskierre</h2>
+      </div>
+      <p>GemGamen ydin on yksinkertainen ja palkitseva. Vaihda kaksi vierekkäistä timanttia keskenään — vaaka- tai pystysuunnassa — niin, että muodostuu vähintään kolmen samanvärisen palan rivi tai sarake. Heti kun rivi syntyy, palat häviävät kentältä, niiden yläpuolella olevat timantit putoavat alas täyttämään aukot ja ylhäältä tippuu uusia paloja. Mitä enemmän paloja saat liikkeelle yhdellä vaihdolla, sitä enemmän pisteitä ja vaikutusta saat.</p>
+      <p>Jokainen vaihto on harkittu valinta. Etsi kohtia, joissa yksi siirto laukaisee monta yhdistelmää kerralla, äläkä tuhlaa vaihtoja pieniin kolmen yhdistelmiin, jos isompi mahdollisuus on lähellä.</p>
+    </section>
+
+    <section class="card" id="tavoitteet">
+      <div class="section-head">
+        <h2>Kolme tavoitetyyppiä ja siirtoraja</h2>
+      </div>
+      <p>Jokaisella kentällä on selkeä tavoite, joka pitää saavuttaa rajatulla määrällä siirtoja. GemGamessa on kolme päätavoitetyyppiä:</p>
+      <div class="grid three">
+        <div class="card">
+          <h3>Pisteet</h3>
+          <p>Yllä annettu pisteraja pitää ylittää ennen kuin siirrot loppuvat. Suuremmat yhdistelmät ja cascadet kasvattavat pistesaldoa nopeasti.</p>
+        </div>
+        <div class="card">
+          <h3>Kerää väri</h3>
+          <p>Kerää tietty määrä yhden värin timantteja yhdistämällä niitä. Keskity siihen väriin äläkä hajota siirtoja muualle.</p>
+        </div>
+        <div class="card">
+          <h3>Puhdista esteet</h3>
+          <p>Riko jääkimpaleet ja muut esteet tekemällä yhdistelmiä niiden vierellä, kunnes kenttä on selvä.</p>
+        </div>
+      </div>
+      <p>Kun täytät tavoitteen, kenttä arvioidaan ja saat <strong>1–3 tähteä</strong> suorituksen mukaan. Kolme tähteä vaatii yleensä tavoitteen ylittämistä reilusti — esimerkiksi jäljelle jääneitä siirtoja tai korkeita pisteitä.</p>
+      <p class="notice">Vihje: jos siirtoja jää jäljelle tavoitteen täytyttyä, peli usein muuttaa ylimääräiset siirrot bonuspisteiksi. Säästäväinen pelaaminen kannattaa.</p>
+    </section>
+
+    <section class="card" id="erikoiset">
+      <div class="section-head">
+        <h2>Erikoispalat ja niiden yhdistäminen</h2>
+      </div>
+      <p>Kun yhdistät enemmän kuin kolme palaa kerralla, syntyy erikoispala. Erikoiset ovat tehokkain tapa raivata kenttä ja saavuttaa kolme tähteä. Tässä kolme keskeistä:</p>
+      <ol class="guide-steps">
+        <li><span class="special-name">Raidallinen pala</span> syntyy yhdistämällä neljä samanväristä. Aktivoituessaan se pyyhkii koko rivin tai sarakkeen — suunta riippuu siitä, miten alkuperäinen yhdistelmä muodostui.</li>
+        <li><span class="special-name">Käärity pala</span> syntyy L- tai T-muotoisesta yhdistelmästä. Se räjähtää ympärillään olevassa 3×3-ruudukossa — ja vielä toisen kerran heti perään, mikä tekee siitä erityisen tuhoisan.</li>
+        <li><span class="special-name">Sateenkaaripala</span> syntyy viiden palan suorasta. Kun vaihdat sen minkä tahansa värin viereen, se poistaa kentältä kaikki sen väriset timantit kerralla.</li>
+      </ol>
+      <p>Kaikkein voimakkainta on <strong>yhdistää kaksi erikoispalaa</strong> keskenään vaihtamalla ne vierekkäin. Raidallinen + käärity, kaksi sateenkaarta tai sateenkaari + raidallinen tuottavat valtavia ketjureaktioita, jotka voivat tyhjentää suuren osan kentästä yhdellä siirrolla. Pidä silmällä mahdollisuuksia rakentaa kaksi erikoista lähekkäin.</p>
+    </section>
+
+    <section class="card" id="cascadet">
+      <div class="section-head">
+        <h2>Cascadet ja ketjucombot</h2>
+      </div>
+      <p>Kun palat häviävät ja yläpuolella olevat putoavat alas, ne voivat osua kohdalleen ja muodostaa uusia yhdistelmiä ilman omaa siirtoasi. Tätä kutsutaan cascadeksi. Jokainen peräkkäinen yhdistelmä kasvattaa comboa ja antaa enemmän pisteitä kuin pelkkä alkuperäinen vaihto.</p>
+      <p>Hyvät pelaajat etsivät siirtoja, jotka käynnistävät pitkän cascade-ketjun. Kentän alalaitaan tehty yhdistelmä saa koko yläpuolisen pinon liikkeelle ja maksimoi ketjun pituuden. Cascadet ovat usein avain kolmen tähden tulokseen ja tiukkojen siirtorajojen ohittamiseen.</p>
+    </section>
+
+    <section class="card" id="tahdet">
+      <div class="section-head">
+        <h2>Tähdet ja puutarhakaupunginosat</h2>
+      </div>
+      <p>Kentistä ansaitut tähdet eivät ole vain pistemittari — niillä on käyttötarkoitus. Tähdillä entisöit tähtitaivaan puutarhan kaupunginosia, kuten <strong>Starlight Promenade</strong> ja <strong>Moonpetal Square</strong>. Kun kunnostat alueen, avaat etuja, jotka tekevät tulevista kentistä mukavampia pelata.</p>
+      <p>Puutarhan rakentaminen antaa pelille rauhallisen, edistyvän tunnelman matkojen lomassa: pelaat pulmia, keräät tähtiä ja näet kotipuutarhasi heräävän jälleen eloon. Mikään ei pakota kiirehtimään — voit edetä omaan tahtiisi täysin offline-tilassa.</p>
+    </section>
+
+    <section class="card" id="resurssit">
+      <div class="section-head">
+        <h2>Elämät, kolikot, boosterit ja Vihje</h2>
+      </div>
+      <div class="grid two">
+        <div class="card">
+          <h3>Elämät ja kolikot</h3>
+          <p>Epäonnistunut kenttä kuluttaa elämän, mutta elämät täydentyvät itsestään ajan myötä — odotusta ei tarvitse ostaa pois. Kolikoita ansaitsee pelaamalla, ja niillä voi hankkia boostereita.</p>
+        </div>
+        <div class="card">
+          <h3>Boosterit ja Vihje</h3>
+          <p>Käytä <strong>Vasaraa</strong> yksittäisen palan poistamiseen, <strong>Sekoitusta</strong> uudistamaan kenttä ja <strong>Lisäsiirtoja</strong> jatkamaan tiukkaa kierrosta. Tarvittaessa <strong>Vihje</strong> ehdottaa seuraavan siirron, kun jäät jumiin.</p>
+        </div>
+      </div>
+      <p>GemGame on ilmainen ladata, ja siinä on valinnaisia sovelluksen sisäisiä ostoja. Mainoksia, pakkoajastimia tai energiaodotuksia ei ole, ja peli toimii kokonaan offline-tilassa — voit pelata lentokoneessa tai ilman verkkoyhteyttä.</p>
+    </section>
+
+    <section class="card" id="sisalto">
+      <div class="section-head">
+        <h2>Päivittäiset palkinnot, tehtävät ja Celestial Pass</h2>
+      </div>
+      <p>Säännöllisestä pelaamisesta palkitaan. <strong>Päivittäiset palkinnot</strong> antavat ilmaisia tavaroita joka kerta, kun palaat peliin, ja <strong>tehtävät</strong> tarjoavat pieniä haasteita lisäpalkintojen toivossa. <strong>Celestial Pass</strong> tarjoaa edistymisradan sekä ilmaisella että premium-tasolla, jolloin saat lisää palkintoja sitä mukaa kun pelaat.</p>
+      <p>Game Center -tuki tuo mukanaan <strong>3 tulostaulua</strong> ja <strong>6 saavutusta</strong>, joten voit verrata tuloksiasi muihin pelaajiin ja kerätä kunniamerkkejä matkan varrella.</p>
+      <div class="button-row">
+        <a class="button button-primary" href="https://apps.apple.com/app/id6761720994">Lataa GemGame App Storesta</a>
+        <a class="button button-secondary" href="../faq/">Lue usein kysytyt kysymykset</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>GemGame — kehittäjä George Wall</p>
+    <nav class="nav">
+      <a href="../">Etusivu</a>
+      <a href="../../privacy/">Tietosuoja</a>
+      <a href="../../support/">Tuki</a>
+      <a href="../../terms/">Käyttöehdot</a>
+    </nav>
+  </footer>
+</div>
+</body>
+</html>
