@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Play Today's Daily Star Board — GemGame</title>
+<meta name="description" content="A friend challenged you to beat their score on today's Daily Star board — the same free match-3 puzzle for every GemGame player worldwide. Open it in the app or get GemGame free.">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<link rel="canonical" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/play/">
+<meta name="apple-itunes-app" content="app-id=6761720994">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="GemGame">
+<meta property="og:title" content="Beat my score on today's Daily Star board">
+<meta property="og:description" content="Everyone plays the same free daily match-3 board. Think you can do better? Open today's board in GemGame.">
+<meta property="og:url" content="https://georgepwall1991.github.io/fleet-commander-site/gemgame/play/">
+<meta property="og:image" content="https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/og/home.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Beat my score on today's Daily Star board">
+<meta name="twitter:description" content="Everyone plays the same free daily match-3 board. Think you can do better? Open today's board in GemGame.">
+<meta name="twitter:image" content="https://georgepwall1991.github.io/fleet-commander-site/gemgame/assets/og/home.png">
+<link rel="stylesheet" href="../assets/site.css">
+<link rel="icon" href="../assets/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<meta name="theme-color" content="#0a0820">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "inLanguage": "en",
+  "name": "Play Today's Daily Star Board — GemGame",
+  "description": "Open today's shared Daily Star match-3 board in GemGame, or get the game free on the App Store.",
+  "url": "https://georgepwall1991.github.io/fleet-commander-site/gemgame/play/",
+  "mainEntityOfPage": "https://georgepwall1991.github.io/fleet-commander-site/gemgame/play/"
+}
+</script>
+</head>
+<body>
+<div class="shell">
+<header class="site-header">
+<a class="brand" href="../">
+<span class="brand-mark">GemGame</span>
+</a>
+<nav class="nav" aria-label="Primary">
+        <a href="../">Home</a>
+        <a href="../guide/">Guide</a>
+        <a href="../tips/">Tips</a>
+        <a href="../faq/">FAQ</a>
+        <a href="../press/">Press</a>
+        <a href="../support/">Support</a>
+      </nav>
+</header>
+
+<main>
+<section class="hero">
+<h1>Beat their score on today's Daily Star board</h1>
+<p id="board-status">Every GemGame player worldwide gets the same free Daily Star board each day. A friend shared theirs — think you can do better?</p>
+<p id="expired-note" hidden>That shared board has expired — Daily Star boards change at midnight UTC. Today's fresh board is live, and it's the same one your friend plays today too.</p>
+
+<p>
+<a class="button" id="open-app" href="gemgame://daily-star">Open today's board in GemGame</a>
+</p>
+<p>
+<a class="appstore-badge" href="https://apps.apple.com/app/id6761720994" aria-label="Download GemGame free on the App Store"><img src="../assets/app-store-badge.svg" alt="Download on the App Store" decoding="async"></a>
+</p>
+<p class="fine-print">Don't have GemGame yet? It's free — no ads, no pay-to-win difficulty spikes. Install it, then come back and tap the button above (or just open Daily Star from the home screen).</p>
+</section>
+
+<section>
+<h2>What is the Daily Star?</h2>
+<p>One handcrafted match-3 board per day, identical for everyone, free to play and replay — no lives spent. Keep a streak going, climb the daily Game Center leaderboard, and earn coins and streak stars.</p>
+</section>
+</main>
+
+<footer class="site-footer">
+<nav aria-label="Footer">
+<a href="../">Home</a>
+<a href="../privacy/">Privacy</a>
+<a href="../support/">Support</a>
+<a href="../terms/">Terms</a>
+</nav>
+<p>GemGame by George Wall. Match-3 puzzles and a starlit garden to restore.</p>
+</footer>
+</div>
+
+<script>
+(function () {
+  // Mirrors DailyStarSeed: dayIndex = whole UTC days since 2026-01-01 UTC.
+  var EPOCH_UTC_MS = Date.UTC(2026, 0, 1);
+  var todayIndex = Math.floor((Date.now() - EPOCH_UTC_MS) / 86400000);
+
+  var params = new URLSearchParams(window.location.search);
+  var shared = parseInt(params.get("d"), 10);
+  var openLink = document.getElementById("open-app");
+
+  if (!isNaN(shared)) {
+    // Always forward the shared day index — the app shows its own honest
+    // "board expired" notice and lands on today's board either way.
+    openLink.href = "gemgame://daily-star?d=" + shared;
+    if (shared !== todayIndex) {
+      document.getElementById("expired-note").hidden = false;
+    }
+  }
+})();
+</script>
+</body>
+</html>
