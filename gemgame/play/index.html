@@ -56,8 +56,8 @@
 
 <main>
 <section class="hero">
-<h1>Beat their score on today's Daily Star board</h1>
-<p id="board-status">Every GemGame player worldwide gets the same free Daily Star board each day. A friend shared theirs — think you can do better?</p>
+<h1 id="page-headline">A friend sent you GemGame</h1>
+<p id="board-status">A handcrafted, cozy match-3 with a starlit garden to restore — free, no ads. If they shared a Daily Star challenge, the same board is waiting for you too.</p>
 <p id="expired-note" hidden>That shared board has expired — Daily Star boards change at midnight UTC. Today's fresh board is live, and it's the same one your friend plays today too.</p>
 
 <p>
@@ -97,8 +97,12 @@
   var openLink = document.getElementById("open-app");
 
   if (!isNaN(shared)) {
-    // Always forward the shared day index — the app shows its own honest
-    // "board expired" notice and lands on today's board either way.
+    // A day index means a Daily Star challenge — upgrade the copy and forward
+    // the index; the app shows its own honest notice for expired boards.
+    document.getElementById("page-headline").textContent =
+      "Beat their score on today's Daily Star board";
+    document.getElementById("board-status").textContent =
+      "Every GemGame player worldwide gets the same free Daily Star board each day. A friend shared theirs — think you can do better?";
     openLink.href = "gemgame://daily-star?d=" + shared;
     if (shared !== todayIndex) {
       document.getElementById("expired-note").hidden = false;
