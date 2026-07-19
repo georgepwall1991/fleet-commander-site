@@ -111,6 +111,12 @@ a:hover {
   text-transform: uppercase;
 }
 
+.eyebrow-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 h1,
 h2,
 h3 {
@@ -138,11 +144,36 @@ p {
   font-size: 1.08rem;
 }
 
+.hero-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.hero-points span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(144, 240, 255, 0.16);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+  font-size: 0.86rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
 .button-row {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 28px;
+}
+
+.hero-actions {
+  align-items: stretch;
 }
 
 .button {
@@ -166,6 +197,45 @@ p {
   border-color: rgba(255, 255, 255, 0.14);
   background: rgba(255, 255, 255, 0.04);
   color: var(--text);
+}
+
+.app-store-badge {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 54px;
+  min-width: 184px;
+  padding: 8px 18px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: #05080f;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+}
+
+.app-store-badge:hover {
+  border-color: rgba(255, 255, 255, 0.24);
+}
+
+.badge-kicker {
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.badge-title {
+  color: var(--text);
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.hero-note {
+  margin-top: 16px;
+  max-width: 680px;
+  font-size: 0.95rem;
 }
 
 .grid {
@@ -200,6 +270,49 @@ p {
 .panel-title {
   color: var(--text);
   font-weight: 800;
+}
+
+.section-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: rgba(92, 224, 255, 0.08);
+  border: 1px solid rgba(92, 224, 255, 0.18);
+  color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.meta-line {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.update-list {
+  display: grid;
+  gap: 18px;
+}
+
+.update-card {
+  display: grid;
+  gap: 10px;
 }
 
 .fine-print {
