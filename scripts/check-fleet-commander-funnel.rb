@@ -44,7 +44,14 @@ reader = if root
 failures = []
 index = reader.call("index.html")
 failures << "homepage is missing the App Store CTA" unless index.include?(APP_STORE_URL)
+failures << "homepage uses a custom imitation App Store badge" if index.include?('class="app-store-badge"')
+unless index.include?("Download Fleet Commander on the App Store")
+  failures << "homepage App Store CTA lacks explicit accessible text"
+end
 failures << "homepage is missing the Updates link" unless index.include?('href="./updates/"')
+unless index.include?("Free to download, with no ads and no pay-to-win")
+  failures << "homepage drops the preserved GemGame store-model claim"
+end
 
 REQUIRED_PAGES.each do |path|
   begin

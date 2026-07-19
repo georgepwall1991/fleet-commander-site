@@ -199,39 +199,6 @@ p {
   color: var(--text);
 }
 
-.app-store-badge {
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 54px;
-  min-width: 184px;
-  padding: 8px 18px;
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  background: #05080f;
-  text-decoration: none;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
-}
-
-.app-store-badge:hover {
-  border-color: rgba(255, 255, 255, 0.24);
-}
-
-.badge-kicker {
-  color: var(--muted);
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.badge-title {
-  color: var(--text);
-  font-size: 1.1rem;
-  font-weight: 800;
-  letter-spacing: 0.02em;
-}
-
 .hero-note {
   margin-top: 16px;
   max-width: 680px;
