@@ -49,7 +49,8 @@ unless index.include?("Download Fleet Commander on the App Store")
   failures << "homepage App Store CTA lacks explicit accessible text"
 end
 failures << "homepage is missing the Updates link" unless index.include?('href="./updates/"')
-unless index.include?("Free to download, with no ads and no pay-to-win")
+normalized_index = index.gsub(/\s+/, " ")
+unless normalized_index.include?("Free to download, with no ads and no pay-to-win")
   failures << "homepage drops the preserved GemGame store-model claim"
 end
 
