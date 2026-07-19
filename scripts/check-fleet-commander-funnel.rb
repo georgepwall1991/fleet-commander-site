@@ -4,6 +4,7 @@ require "base64"
 require "open3"
 
 APP_STORE_URL = "https://apps.apple.com/gb/app/fleet-commander/id6760207805?uo=4"
+OFFICIAL_BADGE_URL = "https://toolbox.marketingtools.apple.com/api/badges/download-on-the-app-store/black/en-gb?size=250x83"
 REQUIRED_PAGES = [
   "updates/index.html",
   "updates/frontier-fleet-gameplay-spotlight/index.html",
@@ -45,8 +46,9 @@ failures = []
 index = reader.call("index.html")
 failures << "homepage is missing the App Store CTA" unless index.include?(APP_STORE_URL)
 failures << "homepage uses a custom imitation App Store badge" if index.include?('class="app-store-badge"')
-unless index.include?("Download Fleet Commander on the App Store")
-  failures << "homepage App Store CTA lacks explicit accessible text"
+failures << "homepage is missing Apple's official App Store badge" unless index.include?(OFFICIAL_BADGE_URL)
+unless index.include?('alt="Download on the App Store"')
+  failures << "homepage App Store badge lacks accessible alternative text"
 end
 failures << "homepage is missing the Updates link" unless index.include?('href="./updates/"')
 normalized_index = index.gsub(/\s+/, " ")
