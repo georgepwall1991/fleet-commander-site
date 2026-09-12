@@ -25,6 +25,9 @@ jobs:
       - name: Verify Fleet Commander acquisition funnel
         run: ruby scripts/check-fleet-commander-funnel.rb --root .
 
+      - name: Verify GemGame acquisition pages
+        run: python3 scripts/check-gemgame-acquisition.py --root .
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
