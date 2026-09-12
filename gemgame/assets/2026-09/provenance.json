@@ -1,0 +1,83 @@
+{
+  "prepared": "2026-09-12",
+  "source_repository": "https://github.com/georgepwall1991/GemGame",
+  "source_commit": "0264688e",
+  "notes": "Real 2.3.0 storefront assets; screenshots include earned-progress fixtures. Only resizing and format conversion. No new UI, animals, or effects composited.",
+  "assets": [
+    {
+      "id": "gameplay",
+      "source": "GemGame/fastlane/screenshots/en-US/00-gameplay.png",
+      "source_sha256": "f4cb66f6b74dfaef9f7c1eac97a23bc8ca54386a12391b76b8a01ef2baab81d3",
+      "derivatives": [
+        "gameplay.jpg",
+        "gameplay.webp"
+      ]
+    },
+    {
+      "id": "conservatory",
+      "source": "GemGame/fastlane/screenshots/en-US/01-conservatory.png",
+      "source_sha256": "2d66019d66f5f084fb077a9eac744a492f490bd891391ef7b50b8f3af4a17446",
+      "derivatives": [
+        "conservatory.jpg",
+        "conservatory.webp"
+      ]
+    },
+    {
+      "id": "garden",
+      "source": "GemGame/fastlane/screenshots/en-US/02-garden.png",
+      "source_sha256": "a2590a281cbf335de77d58fe04876ccc8f4111773ffba3756280665b5626a762",
+      "derivatives": [
+        "garden.jpg",
+        "garden.webp"
+      ]
+    },
+    {
+      "id": "specials",
+      "source": "GemGame/fastlane/screenshots/en-US/03-specials.png",
+      "source_sha256": "409fa6efc84b59ca28be9f253a5be110c53c035cc987250cb2ca2dba4e952579",
+      "derivatives": [
+        "specials.jpg",
+        "specials.webp"
+      ]
+    },
+    {
+      "id": "mastery",
+      "source": "GemGame/fastlane/screenshots/en-US/04-mastery.png",
+      "source_sha256": "50a0a3d52b42da121e760e025aa5e4f4f8bd44ddd2d95a686feffb68b82c04f8",
+      "derivatives": [
+        "mastery.jpg",
+        "mastery.webp"
+      ]
+    },
+    {
+      "id": "boss",
+      "source": "GemGame/fastlane/screenshots/en-US/05-boss.png",
+      "source_sha256": "0ea52cc57def9e9a02738c69a27e2ce69d711ec9c97f59152eba5edcfc39504b",
+      "derivatives": [
+        "boss.jpg",
+        "boss.webp"
+      ]
+    },
+    {
+      "id": "daily-star",
+      "source": "GemGame/fastlane/screenshots/en-US/06-daily-star.png",
+      "source_sha256": "d23d643913956378e35450c546397bc9c665e8a4b49aef51e2adb5f53571721e",
+      "derivatives": [
+        "daily-star.jpg",
+        "daily-star.webp"
+      ]
+    },
+    {
+      "source": "marketing/storefront/brand/icon-1024.png",
+      "output": "icon.png",
+      "sha256": "9a1f790b52c97ab79df92e951a141f2f921e3aa7284fdd6c2d3811e2b35bd681"
+    },
+    {
+      "source": "marketing/storefront/preview.mp4",
+      "output": "preview.mp4",
+      "source_sha256": "4317c15d24fa99730dbed9978779f97ab70a793f3a25343c929af5897f6628d3",
+      "output_sha256": "2cf2bd0d232c522454c5d1dccb6fc1cb5f68b1d9d2a87a54799a3cb4516a4464",
+      "processing": "Normalize video to 30 fps H.264 CRF 20 and faststart; copy existing AAC audio. Source had repeated decode timestamps; content/duration preserved."
+    }
+  ]
+}

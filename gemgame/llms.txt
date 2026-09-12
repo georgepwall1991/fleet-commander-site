@@ -1,16 +1,18 @@
-# GemGame: Match 3 Puzzle
+# GemGame: Cozy Match 3 Puzzle
 
-> A cozy, handcrafted match 3 puzzle game for iPhone with a starlit garden meta-layer. Free to download, no ads, no pay-to-win, no forced purchases to progress.
+> A free match-3 puzzle for iPhone: no ads, offline core puzzles and a magical garden to restore. Campaign lives refill over time; purchases are optional.
 
-GemGame is a casual match 3 puzzle game for iOS by indie developer George Wall. Swap six gem types plus striped, wrapped, and rainbow special gems into cascade combos, earn stars, and spend them restoring celestial garden districts. It includes daily rewards, a Celestial Pass reward track, mission contracts, boosters, on-demand hints, and Game Center leaderboards and achievements. Free with optional in-app purchases; no ads or third-party trackers; plays offline. iPhone / iOS only.
+English-language game for iPhone with iOS 18 or later. Public version checked 12 September 2026: 2.3.0. Match adjacent jewels, create special combinations and spend earned stars on garden restoration. Daily Star offers a free daily board with no life cost. Jewel Lab is free practice with no lives spent or campaign rewards earned. Complete Collection is one optional permanent purchase containing five premium chapter reward tracks and 50 Hard Mode puzzles. Coin packs are separate. Some decorative finishes require premium access. Purchases, Restore Purchases and Game Center require internet. Progress is stored locally; purchase restoration is not campaign-save recovery.
 
-## Pages
-- [Home](https://georgepwall1991.github.io/fleet-commander-site/gemgame/): Overview, features, and store model
-- [FAQ](https://georgepwall1991.github.io/fleet-commander-site/gemgame/faq/): Is it free? Does it have ads? Can I play offline? Game Center?
-- [Press kit](https://georgepwall1991.github.io/fleet-commander-site/gemgame/press/): Fact sheet and short/medium/long descriptions for media and creators
-- [Privacy policy](https://georgepwall1991.github.io/fleet-commander-site/gemgame/privacy/): Local save data and Apple in-app purchase handling
-- [Support](https://georgepwall1991.github.io/fleet-commander-site/gemgame/support/): Restore purchases and bug reporting
-- [Terms](https://georgepwall1991.github.io/fleet-commander-site/gemgame/terms/): Terms of use
+## Current English pages
+- [Home](https://georgepwall1991.github.io/fleet-commander-site/gemgame/): Current real gameplay and download
+- [No ads](https://georgepwall1991.github.io/fleet-commander-site/gemgame/no-ads/): No ad-removal fee; lives and purchase boundaries
+- [Offline guide](https://georgepwall1991.github.io/fleet-commander-site/gemgame/offline/): Feature-by-feature connection requirements
+- [Garden](https://georgepwall1991.github.io/fleet-commander-site/gemgame/garden/): Restoration, worlds and woodland visitors
+- [FAQ](https://georgepwall1991.github.io/fleet-commander-site/gemgame/faq/): Lives, purchases, restores and local progress
+- [Press kit](https://georgepwall1991.github.io/fleet-commander-site/gemgame/press/): Current supplied artwork, gameplay and developer contact
+- [Privacy](https://georgepwall1991.github.io/fleet-commander-site/gemgame/privacy/)
+- [Support](https://georgepwall1991.github.io/fleet-commander-site/gemgame/support/)
+- [App Store](https://apps.apple.com/app/id6761720994): Free download for iPhone
 
-## App Store
-- [GemGame: Match 3 Puzzle](https://apps.apple.com/app/id6761720994): Free download for iPhone
+Older translated/deeper guides may describe prior versions. Website translations do not imply a localized game interface. This index is factual convenience text, not a guaranteed AI-search ranking mechanism.

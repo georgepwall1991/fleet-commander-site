@@ -30,7 +30,7 @@
   </url>
   <url>
     <loc>https://georgepwall1991.github.io/fleet-commander-site/gemgame/</loc>
-    <lastmod>2026-07-06</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/fr/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/de/"/>
@@ -236,7 +236,7 @@
   </url>
   <url>
     <loc>https://georgepwall1991.github.io/fleet-commander-site/gemgame/faq/</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/faq/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/fr/faq/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/de/faq/"/>
@@ -368,7 +368,7 @@
   </url>
   <url>
     <loc>https://georgepwall1991.github.io/fleet-commander-site/gemgame/press/</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/press/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/fr/press/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/de/press/"/>
@@ -446,7 +446,7 @@
   </url>
   <url>
     <loc>https://georgepwall1991.github.io/fleet-commander-site/gemgame/site-index/</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/site-index/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/fr/site-index/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/de/site-index/"/>
@@ -457,7 +457,7 @@
   </url>
   <url>
     <loc>https://georgepwall1991.github.io/fleet-commander-site/gemgame/garden/</loc>
-    <lastmod>2026-07-06</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/garden/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/fr/garden/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/de/garden/"/>
@@ -518,7 +518,7 @@
   </url>
   <url>
     <loc>https://georgepwall1991.github.io/fleet-commander-site/gemgame/no-ads/</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/no-ads/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/fr/no-ads/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/de/no-ads/"/>
@@ -911,5 +911,9 @@
     <xhtml:link rel="alternate" hreflang="el" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/el/site-index/"/>
     <xhtml:link rel="alternate" hreflang="fi" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/fi/site-index/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://georgepwall1991.github.io/fleet-commander-site/gemgame/site-index/"/>
+  </url>
+  <url>
+    <loc>https://georgepwall1991.github.io/fleet-commander-site/gemgame/offline/</loc>
+    <lastmod>2026-09-12</lastmod>
   </url>
 </urlset>
