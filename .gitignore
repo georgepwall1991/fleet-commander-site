@@ -1,2 +1,4 @@
 # Local gstack browse-engine state (audit/network logs, session cache)
 .gstack/
+
+__pycache__/

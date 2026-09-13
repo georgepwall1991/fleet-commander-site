@@ -28,6 +28,9 @@ jobs:
       - name: Verify GemGame acquisition pages
         run: python3 scripts/check-gemgame-acquisition.py --root .
 
+      - name: Verify Frontier Runs acquisition assets
+        run: python3 scripts/check-frontier-acquisition.py
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 

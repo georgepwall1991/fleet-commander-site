@@ -3,7 +3,7 @@
 require "base64"
 require "open3"
 
-APP_STORE_URL = "https://apps.apple.com/gb/app/fleet-commander/id6760207805?uo=4"
+APP_STORE_URL = "https://apps.apple.com/us/app/fleet-commander-galaxy-war/id6760207805?uo=4"
 OFFICIAL_BADGE_URL = "https://toolbox.marketingtools.apple.com/api/badges/download-on-the-app-store/black/en-gb?size=250x83"
 REQUIRED_PAGES = [
   "updates/index.html",
