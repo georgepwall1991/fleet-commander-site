@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Rebuild the English Fleet Commander acquisition pages; never touches GemGame."""
 from pathlib import Path
-import html,json
+import html,json,hashlib
 R=Path(__file__).resolve().parents[1]
+CSS_VERSION=hashlib.sha256((R/'assets/frontier/frontier.css').read_bytes()).hexdigest()[:12]
 BASE='https://georgepwall1991.github.io/fleet-commander-site/'
 APP='https://apps.apple.com/us/app/fleet-commander-galaxy-war/id6760207805?uo=4'
 BADGE='https://toolbox.marketingtools.apple.com/api/badges/download-on-the-app-store/black/en-gb?size=250x83'
@@ -10,7 +11,7 @@ def badge(campaign):
  return f'<a class="badge" href="{APP}&amp;ct={campaign}&amp;mt=8"><img src="{BADGE}" width="170" height="56" alt="Download on the App Store"></a>'
 def head(title,description,route=''):
  schema={'@context':'https://schema.org','@type':'SoftwareApplication','name':'Fleet Commander','applicationCategory':'GameApplication','operatingSystem':'iOS 17.0 or later; iPadOS 17.0 or later','description':description,'url':BASE,'downloadUrl':APP,'offers':{'@type':'Offer','price':'0','priceCurrency':'USD'},'author':{'@type':'Person','name':'George Wall'}}
- return f'''<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(title)}</title><meta name="description" content="{html.escape(description)}"><link rel="canonical" href="{BASE+route}"><meta property="og:type" content="website"><meta property="og:title" content="{html.escape(title)}"><meta property="og:description" content="{html.escape(description)}"><meta property="og:url" content="{BASE+route}"><meta property="og:image" content="{BASE}assets/frontier/social-card.jpg"><meta name="twitter:card" content="summary_large_image"><link rel="stylesheet" href="{'../' if route else './'}assets/frontier/frontier.css"><script type="application/ld+json">{json.dumps(schema)}</script></head><body><a class="skip" href="#main">Skip to content</a>'''
+ return f'''<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(title)}</title><meta name="description" content="{html.escape(description)}"><link rel="canonical" href="{BASE+route}"><meta property="og:type" content="website"><meta property="og:title" content="{html.escape(title)}"><meta property="og:description" content="{html.escape(description)}"><meta property="og:url" content="{BASE+route}"><meta property="og:image" content="{BASE}assets/frontier/social-card.jpg"><meta name="twitter:card" content="summary_large_image"><link rel="stylesheet" href="{'../' if route else './'}assets/frontier/frontier.css?v={CSS_VERSION}"><script type="application/ld+json">{json.dumps(schema)}</script></head><body><a class="skip" href="#main">Skip to content</a>'''
 def nav(prefix=''):
  return f'<header class="wrap nav"><a class="brand" href="{prefix or "./"}">FLEET<span>COMMANDER</span></a><nav aria-label="Main"><a href="{prefix}#gameplay">Gameplay</a><a href="{prefix}frontier-runs-guide/">Field guide</a><a href="{prefix}updates/">Updates</a></nav></header>'
 def footer(prefix=''):
