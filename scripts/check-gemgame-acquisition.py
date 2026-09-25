@@ -9,7 +9,7 @@ import re
 import xml.etree.ElementTree as ET
 
 BASE = 'https://georgepwall1991.github.io/fleet-commander-site/'
-ROUTES = ['', 'no-ads/', 'offline/', 'garden/', 'faq/', 'press/']
+ROUTES = ['', 'no-ads/', 'offline/', 'garden/', 'voiceover/', 'faq/', 'press/']
 
 
 class Page(HTMLParser):
@@ -87,7 +87,7 @@ def check(root):
                     failures.append(f'{route}: broken local reference {ref}')
     if failures:
         raise SystemExit('\n'.join('FAIL: ' + f for f in failures))
-    print('GemGame acquisition check passed: six pages, canonical URLs, sitemap, structured data, download CTAs, local links/assets and claim boundaries')
+    print('GemGame acquisition check passed: seven pages, canonical URLs, sitemap, structured data, download CTAs, local links/assets and claim boundaries')
 
 
 if __name__ == '__main__':
