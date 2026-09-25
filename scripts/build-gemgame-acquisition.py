@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build GemGame's six English acquisition pages from current, bounded claims.
+"""Build GemGame's seven English acquisition pages from current, bounded claims.
 
 Run from any directory. Assets are checked in; source provenance is in
 gemgame/assets/2026-09/provenance.json. Publication is a separate Pages deployment.
@@ -62,10 +62,10 @@ def render(route, title, description, heading, lead, content):
             "screenshot": [BASE + ASSETS + n + ".jpg" for n, _ in SHOTS],
         }]}
     hero_image = picture("gameplay", "Real GemGame match-3 board with jewel combinations", prefix, True) if not route else ""
-    nav = "".join(link(r, label) for r, label in [("no-ads/", "No ads"), ("offline/", "Offline play"), ("garden/", "The garden"), ("faq/", "FAQ")])
+    nav = "".join(link(r, label) for r, label in [("no-ads/", "No ads"), ("offline/", "Offline play"), ("garden/", "The garden"), ("voiceover/", "VoiceOver"), ("faq/", "FAQ")])
     # Preserve reciprocal language alternates for the five existing translated pages.
     alternates = ""
-    if route != "offline/":
+    if route not in ("offline/", "voiceover/"):
         alternates = ''.join(f'<link rel="alternate" hreflang="{lang}" href="{BASE}{locale}{route}">\n' for lang, locale in [("en", ""), ("fr", "fr/"), ("de", "de/"), ("it", "it/"), ("el", "el/"), ("fi", "fi/"), ("x-default", "")])
     page = f'''<!doctype html>
 <html lang="en"><head>
@@ -106,7 +106,7 @@ def build():
     home += section("See the game you'll play", '<p>Real gameplay and earned progress from the five-world adventure. Gardens and mastery unlock as you play.</p>' + gallery)
     home += section("Twenty-four seconds of magic", '<video controls playsinline preload="none" poster="./assets/2026-09/gameplay.jpg" width="886" height="1920" aria-label="GemGame real gameplay preview"><source src="./assets/2026-09/preview.mp4" type="video/mp4"><a href="./assets/2026-09/preview.mp4">Watch the gameplay preview</a></video>')
     home += section("What is free?", '<p>The base campaign, garden and Jewel Lab are free. Daily Star gives you a free daily board without spending a life. Campaign lives refill over time.</p><p>The optional Complete Collection is one permanent purchase with five premium chapter reward tracks and 50 Hard Mode puzzles. Coin packs and some decorative finishes are optional purchases.</p>')
-    home += section("Find your kind of puzzle break", f'<div class="cards"><article><h3>A game without ad breaks</h3><p>No banners, interstitials or rewarded video ads.</p>{link("no-ads/","How no-ads play works →")}</article><article><h3>A puzzle for the commute</h3><p>Core puzzles run locally; online extras are clearly explained.</p>{link("offline/","What works without Wi-Fi →")}</article><article><h3>A garden to return to</h3><p>Turn earned stars into visible restoration.</p>{link("garden/","Explore the garden →")}</article></div>')
+    home += section("Find your kind of puzzle break", f'<div class="cards"><article><h3>A game without ad breaks</h3><p>No banners, interstitials or rewarded video ads.</p>{link("no-ads/","How no-ads play works →")}</article><article><h3>A puzzle for the commute</h3><p>Core puzzles run locally; online extras are clearly explained.</p>{link("offline/","What works without Wi-Fi →")}</article><article><h3>A garden to return to</h3><p>Turn earned stars into visible restoration.</p>{link("garden/","Explore the garden →")}</article><article><h3>Playable with VoiceOver</h3><p>Explore the board by touch, hear every match and play the whole game without sight.</p>{link("voiceover/","How VoiceOver play works →")}</article></div>')
     render("", "GemGame — Offline Match 3 for iPhone, No Ads", "Play GemGame, a cozy match 3 puzzle for iPhone with no ads. Swap jewels, enjoy offline core puzzles and restore a magical garden. Free with optional purchases.", "Offline match 3.<br>A little everyday magic.", "Swap sparkling jewels, discover a clever combination and bring a magical garden to life. A cozy puzzle break with no ads.", home)
 
     noads = section("No ad purchase required", '<p>GemGame has no banner ads, no interstitials and no rewarded video ads. You do not need to buy an ad-removal upgrade.</p>')
@@ -128,6 +128,13 @@ def build():
     garden += section("What can I restore for free?", '<p>The base garden remains free, and restoration uses earned stars. Some decorative finishes require premium access. Optional purchases are explained in the game; you do not need to buy the Complete Collection to begin growing your garden.</p>' + link("faq/", "Read the purchase and progress FAQ →"))
     render("garden/", "Garden Match 3 for iPhone — Restore a Magical Garden | GemGame", "Match jewels and spend earned stars restoring GemGame's magical garden. Discover districts and woodland visitors. Free base garden with optional premium finishes.", "One clever match.<br>A garden coming to life.", "Restore a fountain, make room for flowers and welcome a little woodland company. Your puzzle progress becomes something you can return to.", garden)
 
+    voice = section("Exploring the board", '<ul><li>The board is a grid. Explore it by touch, or swipe through it row by row from the top.</li><li>Each cell has a short label: the jewel, plus any special jewel or blocker on it.</li><li>To swap, select a jewel, then select the neighbouring jewel you want to swap it with.</li><li>After a swap, VoiceOver says what matched, or &ldquo;no match, no move used&rdquo;.</li><li>Combo and chain messages are spoken outside the grid, so your place on the board is kept.</li></ul>')
+    voice += section("Knowing where you stand", '<ul><li>Swipe order is objectives, then the board, then your tools.</li><li>Moves left, objectives and your last move are always available.</li><li>&ldquo;Current hint&rdquo; says none until you use a hint, then names the pair to swap.</li><li>At the end of a level, focus stays on the results, which read your stars, score and coins.</li></ul>')
+    voice += section("Settings that help", '<ul><li><strong>Announce position first</strong> (Settings): hear the row and column before the jewel.</li><li><strong>Colour-blind assist</strong> (Settings): a colour-safe jewel palette. Jewels also have distinct shapes.</li><li><strong>Reduce Motion</strong>: GemGame follows your iPhone setting.</li></ul>')
+    voice += section("Shaped by blind players", '<p>Blind players tested GemGame through TestFlight, and their requests changed how the board, hints and results are spoken. If anything is slow, confusing or unlabelled, please email <a href="mailto:georgewall1991@icloud.com">georgewall1991@icloud.com</a>. Accessibility fixes come first.</p>')
+    voice += section("Fair to play", '<p>No ads. Core puzzles work offline. Campaign lives refill over time, Daily Star is a free daily board with no life cost, and purchases are optional.</p>' + link("faq/", "Read the FAQ →"))
+    render("voiceover/", "Match 3 Playable With VoiceOver for iPhone — GemGame", "GemGame is a match 3 puzzle for iPhone you can play with VoiceOver. Explore the board by touch, hear matches and hints, and play without sight. No ads.", "A match 3 you can<br>play by ear.", "Explore the board by touch, hear every match and hint, and play the whole game with VoiceOver.", voice)
+
     answers = [
         ("Is GemGame free?", "Yes. Download it free on iPhone with iOS 18 or later. The base campaign, garden and Jewel Lab are free. Purchases are optional."),
         ("Does it have ads?", "No. There are no banners, interstitials or rewarded video ads, and no ad-removal purchase is required."),
@@ -137,6 +144,7 @@ def build():
         ("What is the Complete Collection?", "One permanent purchase includes all five premium chapter reward tracks and 50 Hard Mode puzzles. Rewards are earned through play. The base campaign and garden remain free. Coin packs are separate, optional purchases."),
         ("I already bought a chapter pass or Hard Mode. Do I pay again?", "Verified owners of a legacy chapter pass or Hard Mode qualify for the Complete Collection through Restore Purchases at no extra cost. Restore while online using the Apple account that made the purchase. Coin-pack ownership alone does not qualify."),
         ("Will reinstalling restore my progress?", "Game progress is stored locally. Restore Purchases restores eligible ownership, not a deleted campaign save. Keep the app installed to preserve your local progress."),
+        ("Can I play with VoiceOver?", "Yes. The board, hints, matches, results, garden and settings are spoken with VoiceOver, and blind players helped shape how it works. Read the VoiceOver guide for details."),
         ("What language is the game in?", "The current App Store listing reports English for the app. Translated website or store text does not mean the game's interface supports that language."),
         ("How do I get help?", "Email georgewall1991@icloud.com with the issue, app version and your iPhone model. Do not include passwords or payment-card details."),
     ]
@@ -149,7 +157,7 @@ def build():
     press += section("Current artwork and real gameplay", '<p>Use these supplied images and footage when covering GemGame. Screenshots include normally earned progress, not the initial player state. Please keep the gameplay accurate and credit GemGame / George Wall.</p><ul>' + ''.join(f'<li><a href="../{ASSETS}{n}.jpg">{escape(a)} — screenshot</a></li>' for n,a in SHOTS) + f'<li><a href="../{ASSETS}icon.png">App icon</a></li><li><a href="../{ASSETS}preview.mp4">24-second gameplay preview</a></li></ul>')
     press += section("Contact the developer", '<p>For coverage, questions or review requests: <a href="mailto:georgewall1991@icloud.com">georgewall1991@icloud.com</a>.</p>')
     render("press/", "GemGame Press Kit — Facts, Screenshots and Gameplay", "GemGame press kit: current iPhone gameplay, screenshots, app icon, accurate feature and purchase details, and independent developer George Wall's contact.", "A small game.<br>A world of little moments.", "Facts, current artwork and real gameplay for people writing about GemGame.", press)
-    print("Built six English GemGame acquisition pages")
+    print("Built seven English GemGame acquisition pages")
 
 
 if __name__ == "__main__":
